@@ -1,4 +1,4 @@
-My name is Ayush Khaitan, and I am a Hill Assistant Professor (postdoctoral) at Rutgers University, New Brunswick. Here is a [CV](CV.pdf). 
+My name is Ayush Khaitan, and I am a Hill Assistant Professor at Rutgers University, New Brunswick. Here is a [CV](CV.pdf). 
 
 My current research interests are in conformal and CR geometry, Ricci flow, and mathematical physics. 
 
