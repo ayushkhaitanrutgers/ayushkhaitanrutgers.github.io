@@ -7,3 +7,5 @@ The main result of my PhD was [constructing](https://arxiv.org/pdf/2308.02061) f
 Recently, I have also been working on problems in combinatorics with [Bhargav Narayanan](https://sites.math.rutgers.edu/~narayanan/) and [Ishan Mata](https://sites.google.com/site/ishanmata), as well as running a research group with around ten undergraduate students on using LLMs for Mathematics. We have been able to completely replicate DeepMind's Alpha Geometry and Funsearch technologies, and are currently trying to generalize them to other domains. Check out our [research group](llmath.html) on LLMs and Mathematics to know more. 
 
 Along with [Swarat Chaudhari](https://www.cs.utexas.edu/~swarat/) and [Amitayush Thakur](https://amit9oct.github.io), I am co-organizing a panel titled ["The use of AI tools to aid Mathematics research"](https://ayushkhaitanrutgers.github.io/ai-tools-jmm) at the [Joint Mathematics Meetings, 2025](https://jointmathematicsmeetings.org/jmm) in Seattle. 
+
+Email: ayush.khaitan@rutgers.edu
