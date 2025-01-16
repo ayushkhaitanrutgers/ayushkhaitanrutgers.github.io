@@ -47,19 +47,6 @@
   .panelists li {
     margin-bottom: 10px;
   }
-  .question {
-    font-weight: 600;
-    margin-top: 20px;
-  }
-  .response {
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-  .moderator {
-    font-style: italic;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
 </style>
 </head>
 <body>
@@ -68,13 +55,15 @@
   <h1>Panel on the Use of AI Tools for Mathematics Research</h1>
 
   <div class="response">
-  <p>
-    Given below is our recollection of the panelists' opinions and ideas at our 
-    <a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11074">JMM panel</a>.
-    Any factual errors are the author's alone.
-  </p>
-</div>
-
+    <p>
+      Our JMM 2025 panel, titled “The use of AI tools in Mathematics research”, brought together leading mathematicians and computer scientists working in the field of AI and mathematics. The motivation for the panel was two-fold: that these experts could accurately describe the current state of adoption of AI tools in mathematics research, and that the computer science community could get a better understanding of the kinds of tools that would be most useful for mathematicians.
+    </p>
+    <p>
+      Given below is our recollection of the panelists' opinions and ideas at our 
+      <a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11074">JMM panel</a>.
+      Any factual errors are the author's alone.
+    </p>
+  </div>
   
   <h2>Panelists</h2>
   <ul class="panelists">
@@ -84,62 +73,27 @@
     <li>Kaiyu Yang (FAIR, Meta)</li>
   </ul>
   
-  <div class="question">
-    <p>Question 1: What AI tools are currently being used in mathematics?</p>
-  </div>
-  <div class="response">
-    <p><strong>Alex:</strong> Foundational LLMs like ChatGPT, Claude, etc., are the tools most used by mathematicians for their research. Tools like Lean are also being adopted. Other tools include FunSearch, AlphaGeometry, PatternBoost, etc. DeepMind seems to be very secretive about the Alpha family of technologies, but it would be great if math professors had access to them to solve their problems.</p>
-  </div>
-  <div class="response">
-    <p><strong>Francois:</strong> Although I am an engineer, not a mathematician, I participated in a semester-long workshop last year at Harvard CMSA, where I helped with many complicated math problems using basic Transformers. Hence, it is likely that Transformers can understand complex mathematics and provide answers that seem difficult for even professional mathematicians to compute.</p>
-  </div>
+  <p>
+    The discussion began with an exploration of the AI tools currently being utilized in mathematics research. Alex Kontorovich highlighted that foundational large language models (LLMs) like ChatGPT and Claude are widely used by mathematicians for their research. Additionally, tools such as Lean are gaining traction. Other notable tools mentioned include FunSearch, AlphaGeometry, and PatternBoost. He pointed out that while DeepMind is developing the Alpha family of technologies, access to these tools by mathematics professors could significantly aid in solving complex problems.
+  </p>
   
-  <div class="question">
-    <p>Question 2: Both FunSearch and PatternBoost are based on the genetic evolution of programs, or perhaps mathematical constructions. Currently, these technologies have only been used to construct examples/counterexamples in combinatorics. However, both papers mention that these technologies can be used in other fields as well. What are the obstacles to using these technologies to construct examples in, say, differential geometry or analysis?</p>
-  </div>
-  <div class="response">
-    <p><strong>Francois:</strong> Yes, it seems that combinatorics problems may be more amenable to such methods due to the finite search space.</p>
-  </div>
-  <div class="moderator">
-    <p>Moderator: But even for problems in geometry, there seems to be a finite list of manifolds that mathematicians check before they write down or disprove a conjecture. Could it be possible to automate this with LLMs, perhaps through the use of FunSearch or PatternBoost?</p>
-  </div>
-  <div class="response">
-    <p><strong>Francois:</strong> It seems to me that geometry problems should also be amenable to our methods by dividing up manifolds into a finite number of components. This is something we’d be interested in exploring.</p>
-  </div>
+  <p>
+    Francois Charton shared his experience from a semester-long workshop at Harvard CMSA, where he assisted in solving complicated math problems using basic Transformers. He emphasized that Transformers have the capability to understand complex mathematical concepts and can provide solutions that might be challenging even for professional mathematicians.
+  </p>
   
-  <div class="question">
-    <p>Question 3: AlphaProof is almost at the level of a gold medalist at the IMO. Can these skills be transferred to proving research-level problems in mathematics? How is this skill transfer different in humans compared to transformers?</p>
-  </div>
-  <div class="response">
-    <p><strong>Thomas:</strong> We can’t comment on our current efforts in creating or using AI tools for math research, but it is our understanding that grounding LLMs with formal theorem provers will continue to yield results.</p>
-  </div>
-  <div class="response">
-    <p><strong>Kaiyu:</strong> Recall that the only problems that AlphaProof wasn’t able to solve on the 2024 IMO were the two combinatorics problems. The way that AlphaProof works is that first the problems are manually translated into Lean, and then AlphaProof tries to write a proof in Lean. One of the combinatorics problems was written in terms of “monsters” being on certain boxes of the checkerboard; clearly, these terms are difficult to translate into Lean. That could have been one of the reasons why AlphaProof was not able to solve the problem. It is possible that the scope of LLMs coupled to formal proof systems extends to the most difficult math problems, including research-level problems.</p>
-  </div>
+  <p>
+    Moving on to the application of genetic evolution-based technologies like FunSearch and PatternBoost, the panel discussed their current use in constructing examples and counterexamples in combinatorics. Francois noted that combinatorics problems are more amenable to such methods due to their finite search spaces. However, extending these technologies to fields like differential geometry or analysis presents challenges. The moderator suggested that even in geometry, where there is often a finite list of manifolds to consider, automation through LLMs coupled with tools like FunSearch or PatternBoost could be feasible. Francois agreed, suggesting that geometry problems could be tackled by dividing manifolds into finite components, a potential area for future exploration.
+  </p>
   
-  <div class="question">
-    <p>Question 4: Kaiyu, in your recent position paper, you argue that grounding an LLM in Lean is indispensable to making it reliably good at theorem proving. However, OpenAI’s O3 is able to prove 19/20 problems at the AIME without using formal theorem provers. How confident are you in your prediction that formal theorem provers will be indispensable in advancing AI4Math?</p>
-  </div>
-    <div class="response">
-    <p><strong>Kaiyu:</strong> I'd first like to clarify that we talk about grounding LLMs with formal theorem provers, of which Lean is only one example. Some fields of mathematics are more suited to other formal theorem provers. Secondly, no one knows for certain how OpenAI's O3 is able to solve 19/20 problems on the AIME, but they probably have a verifier that verifies math proofs. It will be interesting to know if it is easier or faster to couple an LLM with a trained verifier or to couple it with a formal theorem prover. This is the major distinction between OpenAI's approach and ours, as stated in the position paper.</p>
-  </div>
-
-  <div class="question">
-    <p>Question 5: It seems to me that LLMs don't have a real understanding of mathematical concepts. They can only really "understand" things that can be written in a natural language sentence. Hence, although they may be able to write poetry and stories, they can't reliably solve math problems by just predicting the next token.</p>
-  </div>
-  <div class="response">
-    <p><strong>Francois:</strong> Mathematical formulas can also be written down as a sentence. This was the theme of my research the whole of last semester at Harvard CMSA. We found a way to encode mathematical questions and formulas as sentences, and successfully trained a transformer to, essentially, translate these questions into answers as one would translate an English sentence into French.</p>
-  </div>
-  <div class="response">
-    <p><strong>Alex:</strong> What I meant is that ChatGPT, although it has read all books on chess that exist, cannot reliably play a game of chess by telling you the moves in English. Hence, it can't really be said that it understands how to play Chess.</p>
-  </div>
-  <div class="response">
-    <p><strong>Francois:</strong> In my experience, transformer architectures can reliably solve most mathematical problems/logical puzzles that they have been trained/fine-tuned on.</p>  
-  </div>
-
+  <p>
+    The conversation then shifted to AlphaProof, an AI tool nearing the proficiency of a gold medalist at the International Mathematical Olympiad (IMO). Thomas Hubert from Google DeepMind expressed that while they cannot comment on their current efforts, grounding LLMs with formal theorem provers like Lean is expected to yield significant results in proving research-level mathematical problems. Kaiyu Yang elaborated on AlphaProof's performance, noting that it successfully solved 18 out of 20 problems at the 2024 IMO. The two combinatorics problems that remained unsolved involved complex translations into Lean, highlighting the challenges in bridging natural language descriptions with formal proof systems. Kaiyu posited that the integration of LLMs with formal theorem provers holds promise for tackling some of the most challenging problems in mathematics.
+  </p>
+  
+  <p>
+    Addressing the skepticism around LLMs' understanding of mathematical concepts, Francois Charton argued that mathematical formulas can be encoded as sentences. In his research at Harvard CMSA, he demonstrated that transformers could translate mathematical questions and formulas into answers similarly to how one might translate English sentences into French. Alex Kontorovich provided a counterpoint by comparing ChatGPT's ability to play chess based solely on reading books about the game, suggesting that without a deeper understanding, LLMs might not reliably solve math problems merely by predicting the next token. Francois, however, maintained that transformer architectures are capable of reliably solving most mathematical problems and logical puzzles they are trained or fine-tuned on.
+  </p>
+  
 </div>
 
 </body>
 </html>
-
- 
