@@ -13,15 +13,20 @@
     background-color: #f8f8f8;
     padding: 20px;
   }
-  h1, h2 {
+  h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
-    color: #2c3e50;
+    color: #1a73e8; /* Nice shade of blue */
     margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
   }
   p {
     font-size: 18px;
     color: #555;
     max-width: 800px;
+    margin-bottom: 20px;
   }
   .container {
     max-width: 800px;
@@ -46,6 +51,10 @@
   }
   .panelists li {
     margin-bottom: 10px;
+    font-size: 18px; /* Ensure same font size as paragraphs */
+  }
+  .response {
+    margin-left: 0;
   }
 </style>
 </head>
@@ -66,37 +75,43 @@
   
   <h2>Panelists</h2>
   <ul class="panelists">
-    <li>Francois Charton (FAIR, Meta)</li>
-    <li>Thomas Hubert (Google DeepMind)</li>
-    <li>Alex Kontorovich (Rutgers University)</li>
-    <li>Kaiyu Yang (FAIR, Meta)</li>
+    <li><a href="https://scholar.google.com/citations?user=1tMnd-4AAAAJ&hl=en">Francois Charton</a> (FAIR, Meta)</li>
+    <li><a href="https://scholar.google.co.uk/citations?user=WXG0QfMAAAAJ&hl=en">Thomas Hubert</a> (Google DeepMind)</li>
+    <li><a href="https://sites.math.rutgers.edu/~alexk/">Alex Kontorovich</a> (Rutgers University)</li>
+    <li><a href="https://yangky11.github.io">Kaiyu Yang</a> (FAIR, Meta)</li>
   </ul>
 
+  <h3>Panel Structure</h3>
   <p>
-    Before the discussion began, the moderator welcomed the panelists, and told them about the structure of the panel. The moderator would ask questions either to one particular panelist, or to all panelists collectively. The panelists were free to answer both types of questions. Moreover, the panelists were encouraged to get technical, and also talk about their own research to better inform their answers.   
-
+    Before the discussion began, the moderator welcomed the panelists and explained the structure of the panel. The moderator would ask questions either to a particular panelist or to all panelists collectively. The panelists were free to answer both types of questions. Moreover, the panelists were encouraged to get technical and also talk about their own research to better inform their answers.
   </p> 
   
+  <h3>AI Tools in Mathematics Research</h3>
   <p>
     The discussion began by asking all the panelists about the kinds of AI tools currently being utilized in mathematics research. Alex highlighted that foundational large language models (LLMs) like ChatGPT and Claude are widely used by mathematicians for their research. He stated that discussing research ideas with a powerful LLM is akin to talking to an expert during tea time in his department. He also added that tools such as Lean are slowly gaining traction. Other notable tools mentioned include FunSearch, AlphaGeometry, and PatternBoost. He pointed out that while DeepMind is developing the Alpha family of technologies, access to these tools by mathematics professors could significantly help their research programs.
   </p>
   
+  <h3>Application of Transformers</h3>
   <p>
     Francois Charton also shared his experience from a semester-long workshop at Harvard CMSA, where he assisted in solving complicated math problems using basic Transformers. He emphasized that Transformers have the capability to understand complex mathematical concepts and can provide solutions that might be challenging even for professional mathematicians. 
   </p>
   
+  <h3>Genetic Evolution-Based Technologies</h3>
   <p>
     Moving on to the application of technologies like FunSearch and PatternBoost, the panel discussed their current use in constructing examples and counterexamples in combinatorics. Francois noted that combinatorics problems are more amenable to such methods due to their finite search spaces. However, extending these technologies to fields like differential geometry or analysis presents challenges. The moderator suggested that even in geometry, where there is often a finite list of manifolds to consider, automation through LLMs coupled with tools like FunSearch or PatternBoost could be feasible. Francois agreed, suggesting that geometry problems could be tackled by dividing manifolds into finite components, a potential area for future exploration.
   </p>
   
+  <h3>AlphaProof and Theorem Proving</h3>
   <p>
     The conversation then shifted to AlphaProof, an AI tool that is "almost" at the proficiency of a gold medalist at the International Mathematical Olympiad (IMO). Thomas expressed that while they cannot comment on their current efforts, grounding LLMs with formal theorem provers like Lean is expected to yield significant results in proving research-level mathematical problems. He further clarified that while AlphaProof had been trained on IMO problems, it had been trained in a way akin to how a human would train for it, as opposed to just memorizing large datasets of solutions. Hence, this approach held promise for solving research-level math problems. Kaiyu Yang elaborated on AlphaProof's performance, noting that it successfully solved 4 out of 6 problems at the 2024 IMO. The two combinatorics problems that remained unsolved involved the translation of non-standard words like "monsters" into Lean, which suggests that a more standard phrasing of the questions could have led AlphaProof to perform even better. Kaiyu posited that the integration of LLMs with formal theorem provers holds promise for tackling the most challenging problems in mathematics.
   </p>
   
+  <h3>Understanding Mathematical Concepts with LLMs</h3>
   <p>
     Addressing the skepticism around LLMs' understanding of mathematical concepts, Francois Charton argued that mathematical formulas can be encoded as sentences. In his research at Harvard CMSA, he demonstrated that transformers could translate mathematical questions and formulas into answers similarly to how one might translate English sentences into French. Alex Kontorovich provided a counterpoint by comparing ChatGPT's ability to play chess based solely on reading books about the game, suggesting that without a deeper understanding, LLMs might not reliably solve math problems merely by predicting the next token. Francois, however, maintained that transformer architectures are capable of reliably solving most mathematical problems and logical puzzles they are trained or fine-tuned on.
   </p>
 
+  <h3>Conclusion</h3>
   <p>
     All in all, the discussion was electric, and the experts skillfully weaved together intuitive explanations as well as technical details into helpful and complete answers for the 100-odd mathematicians and computer scientists in the audience. At the end of the panel, there was a palpable feeling in the audience that something quite fundamental had changed about the nature of mathematics research, and that this wouldn't be the last panel on AI tools and math.   
   </p>
