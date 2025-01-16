@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panel on the Use of AI Tools for Mathematics Research</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
-    padding: 20px;
-  }
-  h1, h2, h3 {
-    font-family: 'Roboto Slab', serif;
-    color: #1a73e8; /* Nice shade of blue */
-    margin-bottom: 20px;
-  }
-  h3 {
-    font-size: 1.1em;
-    margin-top: 30px;
-  }
-  p {
-    font-size: 18px;
-    color: #555;
-    max-width: 800px;
-    margin-bottom: 20px;
-  }
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  a {
-    color: #2980b9;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  .panelists {
-    list-style-type: none;
-    padding: 0;
-  }
-  .panelists li {
-    margin-bottom: 10px;
-    font-size: 18px; /* Ensure same font size as paragraphs */
-  }
-  .response {
-    margin-left: 0;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel on the Use of AI Tools for Mathematics Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.8; /* Increased for better readability */
+      color: #333;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      font-family: 'Roboto Slab', serif;
+      color: #1a73e8; /* Refined shade of blue */
+      margin-bottom: 20px;
+      font-weight: 700; /* Ensures headings are bold */
+      letter-spacing: 0.5px; /* Subtle letter spacing */
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
+      max-width: 800px;
+      margin-bottom: 20px;
+      line-height: 1.8; /* Consistent with body */
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Enhanced shadow for depth */
+      border-radius: 8px; /* Rounded corners for a modern look */
+    }
+    a {
+      color: #1a73e8; /* Match heading color for consistency */
+      text-decoration: none;
+      font-weight: 600; /* Semi-bold for better visibility */
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0c47b7; /* Darker shade on hover */
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .panelists {
+      list-style-type: none;
+      padding: 0;
+    }
+    .panelists li {
+      margin-bottom: 10px;
+      font-size: 18px; /* Same as paragraphs */
+      line-height: 1.6;
+    }
+    .response {
+      margin-left: 0;
+    }
+    /* Responsive Typography */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      .container {
+        padding: 15px;
+      }
+      p, .panelists li {
+        font-size: 16px; /* Slightly smaller on smaller screens */
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.75em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -85,7 +114,7 @@
     Before the discussion began, the moderator welcomed the panelists and explained the structure of the panel. The moderator would ask questions either to a particular panelist or to all panelists collectively. The panelists were free to answer both types of questions. Moreover, the panelists were encouraged to get technical and also talk about their own research to better inform their answers.
   </p> 
   
-  <h3>AI Tools in Mathematics Research</h3>
+  <h3>On the current use of AI tools in Mathematics Research</h3>
   <p>
     The discussion began by asking all the panelists about the kinds of AI tools currently being utilized in mathematics research. Alex highlighted that foundational large language models (LLMs) like ChatGPT and Claude are widely used by mathematicians for their research. He stated that discussing research ideas with a powerful LLM is akin to talking to an expert during tea time in his department. He also added that tools such as Lean are slowly gaining traction. Other notable tools mentioned include FunSearch, AlphaGeometry, and PatternBoost. He pointed out that while DeepMind is developing the Alpha family of technologies, access to these tools by mathematics professors could significantly help their research programs.
   </p>
@@ -107,6 +136,8 @@
   <p>
     Addressing the skepticism around LLMs' understanding of mathematical concepts, Francois Charton argued that mathematical formulas can be encoded as sentences. In his research at Harvard CMSA, he demonstrated that transformers could translate mathematical questions and formulas into answers similarly to how one might translate English sentences into French. Alex Kontorovich provided a counterpoint by comparing ChatGPT's ability to play chess based solely on reading books about the game, suggesting that without a deeper understanding, LLMs might not reliably solve math problems merely by predicting the next token. Francois, however, maintained that transformer architectures are capable of reliably solving most mathematical problems and logical puzzles they are trained or fine-tuned on.
   </p>
+  
+  <h3>Conclusion</h3>
   <p>
     All in all, the discussion was electric, and the experts skillfully weaved together intuitive explanations as well as technical details into helpful and complete answers for the 100-odd mathematicians and computer scientists in the audience. At the end of the panel, there was a palpable feeling in the audience that something quite fundamental had changed about the nature of mathematics research, and that this wouldn't be the last panel on AI tools and math.   
   </p>
