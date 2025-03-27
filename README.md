@@ -4,7 +4,7 @@ Email: ayush.khaitan@rutgers.edu
 
 My research is in conformal geometry, problems in geometry and combinatorics, as well as AI4Math. In particular, I am working on problems in combinatorics with [Bhargav Narayanan](https://sites.math.rutgers.edu/~narayanan/) and [Ishan Mata](https://sites.google.com/site/ishanmata), as well as running a research group with undergraduate students on using LLMs for Mathematics. We are currently trying to generalize the Alphageometry and Funsearch technologies to other fields of Mathematics. Check out our [research group](llmath.html) on LLMs and Mathematics to know more. 
 
-[Here](ricci-website.vercel.app) is a chatbot created by Mehaer Chhabda and Rohan Sharma to help mathematicians generate Ricci code for Mathematica.
+[Here](https://ricci-website.vercel.app) is a chatbot created by Mehaer Chhabda and Rohan Sharma to help mathematicians generate Ricci code for Mathematica.
 
 I also organize the [LLM's and Mathematics seminar](seminar.html). 
 
