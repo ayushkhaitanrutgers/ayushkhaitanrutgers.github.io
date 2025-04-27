@@ -1,4 +1,4 @@
-My name is Ayush Khaitan, and I am a Hill Assistant Professor at Rutgers University, New Brunswick. Here is a [CV](New_CV1.pdf). 
+My name is Ayush Khaitan, and I am a Hill Assistant Professor at Rutgers University, New Brunswick. I got my PhD under [Jeffrey Case](https://sites.google.com/view/jeffreyscase) at Penn State University. Here is a [CV](New_CV1.pdf). 
 
 Email: ayush.khaitan@rutgers.edu
 
