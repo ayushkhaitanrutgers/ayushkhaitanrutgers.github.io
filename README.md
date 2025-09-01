@@ -11,3 +11,5 @@ I also organize the [LLM's and Mathematics seminar](seminar.html).
 The main result of my PhD was [constructing](https://arxiv.org/pdf/2308.02061) fully non-linear higher analogues of Perelman's F and W functionals, that will help study the Ricci flow in all dimensions. This result is the culmination of four papers [written](https://arxiv.org/abs/2202.11153) [during](https://arxiv.org/pdf/2203.04719) [my](https://arxiv.org/pdf/2205.06018) [PhD](https://arxiv.org/pdf/2308.02061). 
 
 Along with [Swarat Chaudhari](https://www.cs.utexas.edu/~swarat/) and [Amitayush Thakur](https://amit9oct.github.io), I co-organized a panel titled ["The use of AI tools to aid Mathematics research"](https://ayushkhaitanrutgers.github.io/ai-tools-jmm) at the [Joint Mathematics Meetings, 2025](https://jointmathematicsmeetings.org/jmm) in Seattle. Here are the [notes](jmm.html) from the meeting. 
+
+The webpage for the course Math for AI is [this](math_for_ai.html).
