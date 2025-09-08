@@ -12,4 +12,6 @@ The main result of my PhD was [constructing](https://arxiv.org/pdf/2308.02061) f
 
 Along with [Swarat Chaudhari](https://www.cs.utexas.edu/~swarat/) and [Amitayush Thakur](https://amit9oct.github.io), I co-organized a panel titled ["The use of AI tools to aid Mathematics research"](https://ayushkhaitanrutgers.github.io/ai-tools-jmm) at the [Joint Mathematics Meetings, 2025](https://jointmathematicsmeetings.org/jmm) in Seattle. Here are the [notes](jmm.html) from the meeting. 
 
-The webpage for the course Math for AI is [this](math_for_ai.html).
+I am teaching a graduate course in machine learning and developing LLMs for mathematical research this semester. The webpage for this course is [this](math_for_ai.html).
+
+I am also teaching a course called Intro to Proofs. This is a course that will teach students how to write proofs in Lean. 
