@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
+
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      color: #333;
-      background: #f8f8f8;
+    /* Base Typography & Body */
+    :root {
+      --brand: #1a73e8;
+      --text: #333;
+      --muted: #555;
+      --bg: #f8f8f8;
+      --panel: #f5f9ff;
+      --rule: #ddd;
+    }
+    html, body {
       margin: 0;
       padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
       line-height: 1.8;
     }
+
+    /* Hero/Header Section */
     .hero {
-      background-color: #1a73e8;
+      background-color: var(--brand);
       color: #fff;
       text-align: center;
       padding: 60px 20px;
       border-radius: 0 0 12px 12px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .hero h1 {
-      font-family: 'Roboto Slab', serif;
+      font-family: "Roboto Slab", serif;
       font-weight: 700;
       letter-spacing: 1px;
-      margin-bottom: 20px;
+      margin: 0 0 20px 0;
       color: #fff;
     }
     .hero p {
@@ -37,47 +51,58 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+
+    /* Main Container */
     .container {
       max-width: 860px;
-      margin: auto;
-      background-color: #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin: 0 auto;
+      background: #fff;
       border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       padding: 30px 24px;
     }
+
+    /* Headings */
     h1, h2, h3 {
-      font-family: 'Roboto Slab', serif;
-      color: #1a73e8;
+      font-family: "Roboto Slab", serif;
+      color: var(--brand);
       font-weight: 700;
       letter-spacing: 0.5px;
+      margin-top: 0;
       margin-bottom: 18px;
     }
     h2 { margin-top: 40px; }
     h3 { font-size: 1.1em; margin-top: 32px; }
+
+    /* Text & Lists */
     p {
       font-size: 18px;
-      color: #555;
-      line-height: 1.8;
-      margin-bottom: 18px;
+      color: var(--muted);
+      margin: 0 0 18px 0;
     }
     ul, ol {
+      margin: 0 0 20px 0;
       padding-left: 22px;
-      margin-bottom: 20px;
     }
+
+    /* Informational Blocks */
     .def, .eqn, .note, .callout {
-      border-left: 4px solid #1a73e8;
-      background: #f5f9ff;
+      border-left: 4px solid var(--brand);
+      background: var(--panel);
       padding: 14px 16px;
       margin: 18px 0;
       border-radius: 6px;
     }
     .def h3, .note h3, .callout h3 {
-      margin-top: 0;
-      color: #1a73e8;
-      font-size: 1em;
+      margin: 0 0 8px 0;
+      color: var(--brand);
+      font-size: 0.95em;
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
+    /* Per request, the .eqn block has no internal title */
+
+    /* Code */
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       background: #f3f3f3;
@@ -93,19 +118,26 @@
       border-radius: 8px;
       font-size: 0.92em;
       line-height: 1.6;
+      margin: 0 0 18px 0;
     }
+
+    /* Links */
     a {
-      color: #1a73e8;
-      text-decoration: none;
+      color: var(--brand);
       font-weight: 600;
-      transition: color 0.3s ease;
+      text-decoration: none;
+      transition: color 0.2s ease;
     }
     a:hover { color: #0c47b7; text-decoration: underline; }
+
+    /* Divider */
     hr {
       border: none;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--rule);
       margin: 40px 0;
     }
+
+    /* Responsive */
     @media (max-width: 768px) {
       .hero { padding: 40px 20px; }
       .hero h1 { font-size: 1.8em; }
@@ -120,26 +152,37 @@
 </head>
 <body>
 
-  <div class="hero">
+  <!-- Hero -->
+  <header class="hero" role="banner">
     <h1>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</h1>
     <p>
       A formal workflow that couples frontier language models with a computer algebra system to propose and verify asymptotic inequalities over appropriately chosen subdomains.
     </p>
-  </div>
+  </header>
 
-  <div class="container">
+  <!-- Main -->
+  <main class="container" role="main">
 
+    <!-- Required intro paragraph -->
     <p>
       This article describes the <em>Decompositions Project</em>, an implementation of an <strong>LLM-CAS</strong> framework that aims to verify asymptotic inequalities by combining two capabilities: (i) a large language model (LLM) that proposes <em>natural</em> domain decompositions, and (ii) a computer algebra system (CAS) that attempts a <em>rigorous</em> verification of each decomposed region. In building this project, we confirm Terry Tao's prediction that an AI tool can help rigorously prove asymptotic inequalities. Our tool is able to completely prove all questions asked by Terry <a href="https://mathoverflow.net/a/463940/91878">here</a>.
     </p>
 
-    <div class="def">
-      <h3>Definition</h3>
+    <h2>Overview</h2>
+    <p>
+      The <em>Decompositions Project</em> implements a practical loop between an LLM and a CAS. The LLM suggests a small set of subdomains where the comparison is straightforward; the CAS (Mathematica) then attempts a formal verification on each subdomain using first-order methods. The repository is available at:
+    </p>
+    <p class="callout">
+      <a href="https://github.com/ayushkhaitanrutgers/decompositions-project">https://github.com/ayushkhaitanrutgers/decompositions-project</a>
+    </p>
+
+    <div class="def" aria-labelledby="def-asymp">
+      <h3 id="def-asymp">Definition</h3>
       <p>
         Let \(f\) and \(g\) be non-negative functions on a domain \(D\). We write \(f \ll g\) if there exists a constant \(C &gt; 0\) such that
       </p>
       <div class="eqn">
-        <p style="margin: 0;">\(\forall x \in D, \; f(x) \leq C \cdot g(x).\)</p>
+        <p style="margin:0;">\(\forall x \in D,\; f(x) \le C \cdot g(x).\)</p>
       </div>
       <p>
         This is the usual big-O relation, stated uniformly on \(D\).
@@ -147,61 +190,136 @@
     </div>
 
     <h2>What the Tool Proves</h2>
+    <p>
+      The framework currently verifies two representative results. The statements below are presented in a concise, shareable form.
+    </p>
 
     <h3>1) Series bound</h3>
     <p>
-      For parameters \(h &gt; 1, m &gt; 1\), consider
+      For parameters \(h &gt; 1\), \(m &gt; 1\), consider the series
     </p>
-    <div class="eqn">
-      <p>
-        \[ S(h,m) := \sum_{d=0}^{\infty} \frac{2d+1}{2h^2\Big(1+\frac{d(d+1)}{h^2}\Big)\Big(1+\frac{d(d+1)}{h^2 m^2}\Big)^2}. \]
+    <div class="eqn" aria-label="series-definition">
+      <p style="margin:0;">
+        \[
+          S(h,m) \;:=\; \sum_{d=0}^{\infty}
+          \frac{2d+1}
+               {2h^2\left(1+\frac{d(d+1)}{h^2}\right)
+                      \left(1+\frac{d(d+1)}{h^2 m^2}\right)^2}.
+        \]
       </p>
     </div>
     <p>
-      The framework verifies
+      The tool verifies the asymptotic inequality
     </p>
-    <div class="eqn">
-      <p>
-        \[ S(h,m) \ll 1 + \log(m^2), \quad \text{uniformly for } h &gt; 1, m &gt; 1. \]
+    <div class="eqn" aria-label="series-bound">
+      <p style="margin:0;">
+        \[
+          S(h,m) \;\ll\; 1 + \log\!\big(m^2\big)
+          \quad \text{uniformly for } h &gt; 1,\; m &gt; 1.
+        \]
       </p>
     </div>
+    <p>
+      In practice, the LLM proposes breakpoints in the index \(d\) (where the denominator’s behavior changes), and Mathematica confirms the bound on each range using symbolic inequalities.
+    </p>
 
     <h3>2) Functional inequality</h3>
     <p>
-      For \(x &gt; 0, y &gt; 1\), the framework verifies
+      For variables \(x,y\) with \(x &gt; 0\) and \(y &gt; 1\), the framework verifies
     </p>
-    <div class="eqn">
-      <p>
-        \[ x \cdot y \leq y \log y + e^x. \]
+    <div class="eqn" aria-label="functional-inequality">
+      <p style="margin:0;">
+        \[
+          x\,y \;\le\; y \,\log y \;+\; e^{x}.
+        \]
       </p>
     </div>
-
-    <h2>How it Works</h2>
-    <ol>
-      <li>The user specifies the inequality or series to check.</li>
-      <li>The LLM suggests subdomains or breakpoints where the inequality is expected to simplify.</li>
-      <li>The CAS reduces each part, approximating summands if necessary, and checks them with <code>Resolve</code>.</li>
-      <li>If every piece is certified, the inequality is proven globally.</li>
-    </ol>
-
-    <h2>Relation to Tao’s Notes</h2>
     <p>
-      The design follows Tao’s idea that effective decompositions can make asymptotic proofs manageable. See
-      <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">this blog post</a> and
-      <a href="https://mathoverflow.net/a/463940/91878">his MathOverflow remarks</a>.
+      The verification proceeds by splitting the domain into regimes where comparison is direct (for example, ranges where one side clearly dominates) and applying \(\texttt{Resolve}\) to certify each regime.
     </p>
 
-  </div>
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Problem setup.</strong> Specify a functional inequality \(f,g,D\) or a series \(S\) with a proposed upper bound \(g\) (see <code>examples.py</code> in the repository).</li>
+      <li><strong>Decomposition.</strong> The LLM proposes subdomains (for functions) or index breakpoints (for series) that aim to simplify each local comparison.</li>
+      <li><strong>Simplification.</strong> Where needed, the pipeline replaces complicated summands with valid dominant forms on each subdomain (e.g., using leading terms under positivity conditions).</li>
+      <li><strong>Verification.</strong> Mathematica’s <code>Resolve</code> attempts a first-order proof that \(f \le C \cdot g\) (or the corresponding series bound) on each piece, searching over a finite grid of constants \(C\).</li>
+      <li><strong>Conclusion.</strong> If every piece is certified, the global inequality follows.</li>
+    </ol>
 
-  <!-- MathJax -->
+    <h2>Why Mathematica?</h2>
+    <p>
+      Off-the-shelf SMT solvers and first-order provers often struggle with transcendental functions. Mathematica’s <code>Resolve</code> has been effective for such cases and returns <code>True</code> only when a symbolic proof is found within its first-order scope. While Mathematica does not emit a proof object, this approach has been reliable for the problems targeted here.
+    </p>
+
+    <h2>Relation to Notes by Terence Tao</h2>
+    <p>
+      The project follows two ideas: (a) propose helpful decompositions and (b) verify each piece symbolically. For context, see Tao’s blog post
+      <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">“A proof of concept tool to verify estimates”</a>
+      and his MathOverflow remarks referenced in the repository, including
+      <a href="https://mathoverflow.net/a/463940/91878">this answer</a>.
+    </p>
+
+    <h2>Repository and Usage</h2>
+    <ul>
+      <li><strong>Repository:</strong> <a href="https://github.com/ayushkhaitanrutgers/decompositions-project">Decompositions Project</a></li>
+      <li><strong>Dependencies:</strong> Python 3.9+, access to an LLM API (e.g., Gemini), and Mathematica with <code>wolframscript</code> on <code>PATH</code>.</li>
+      <li><strong>Environment:</strong> place your API key in <code>.env</code> (e.g., <code>GOOGLE_API_KEY=...</code>), set <code>WOLFRAMSCRIPT</code> if needed.</li>
+    </ul>
+
+    <h3>Install</h3>
+    <pre><code>pip install -r requirements.txt
+echo "GOOGLE_API_KEY=your_api_key_here" &gt; .env    # or GEMINI_API_KEY
+# If not auto-detected:
+export WOLFRAMSCRIPT=/usr/local/bin/wolframscript
+</code></pre>
+
+    <h3>Run</h3>
+    <p>Sanity-check the CAS bridge:</p>
+    <pre><code>python mathematica_export.py
+</code></pre>
+    <p>Try a functional inequality you added to <code>examples.py</code>:</p>
+    <pre><code>decomp prove question_&lt;id&gt;
+</code></pre>
+    <p>Try a series inequality you added to <code>examples.py</code>:</p>
+    <pre><code>decomp series series_&lt;id&gt;
+</code></pre>
+
+    <h2>Notes and Limitations</h2>
+    <ul>
+      <li><strong>Proof artifacts.</strong> Mathematica does not output a checkable proof object; integrating with a proof assistant is a natural extension.</li>
+      <li><strong>Transcendental scope.</strong> Some mixed symbolic–transcendental statements may require further decomposition or tighter dominant bounds.</li>
+      <li><strong>Choosing constants.</strong> The constant search is finite; widen it or refine the decomposition if a piece fails.</li>
+      <li><strong>Upper bounds from LLMs.</strong> Asking the LLM to guess tight summand bounds is still challenging; regime-wise CAS simplification has been more reliable.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/ayushkhaitanrutgers/decompositions-project">Decompositions Project (GitHub)</a></li>
+      <li><a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">Tao: A proof of concept tool to verify estimates</a></li>
+      <li><a href="https://mathoverflow.net/a/463940/91878">MathOverflow: asymptotic estimation remarks</a></li>
+    </ul>
+
+  </main>
+
+  <!-- MathJax (loads after content to avoid blocking render) -->
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
+        renderActions: {
+          addMenu: []
+        }
+      }
     };
   </script>
   <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
