@@ -15,3 +15,5 @@ Along with [Swarat Chaudhari](https://www.cs.utexas.edu/~swarat/) and [Amitayush
 I am teaching a graduate course in machine learning and developing LLMs for mathematical research this semester. The webpage for this course is [this](math_for_ai.html).
 
 I am also teaching a course called Intro to Proofs. This is a course that will teach students how to write proofs in Lean. 
+
+[Here](decompositions.html) we describe an AI tool that we have built to rigorously prove asymptotic inequalities. Using it, we answer a [question](https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/) [of](https://mathoverflow.net/a/463940/91878) Terry Tao. 
