@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+    .hero {
+      background-color: #1a73e8;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0 0 12px 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #f0f0f0;
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 860px;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 30px 24px;
+    }
+    h1, h2, h3 {
+      font-family: 'Roboto Slab', serif;
+      color: #1a73e8;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+    h2 { margin-top: 40px; }
+    h3 { font-size: 1.1em; margin-top: 32px; }
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+    .def, .eqn, .note, .callout {
+      border-left: 4px solid #1a73e8;
+      background: #f5f9ff;
+      padding: 14px 16px;
+      margin: 18px 0;
+      border-radius: 6px;
+    }
+    .def h3, .note h3, .callout h3 {
+      margin-top: 0;
+      color: #1a73e8;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #f3f3f3;
+      padding: 1px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    pre {
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 14px 16px;
+      overflow-x: auto;
+      border-radius: 8px;
+      font-size: 0.92em;
+      line-height: 1.6;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover { color: #0c47b7; text-decoration: underline; }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 40px 20px; }
+      .hero h1 { font-size: 1.8em; }
+      .hero p { font-size: 16px; }
+      .container { padding: 20px 16px; margin-bottom: 30px; }
+      p, li { font-size: 16px; }
+      h1 { font-size: 1.8em; }
+      h2 { font-size: 1.5em; }
+      h3 { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</h1>
+    <p>
+      A formal workflow that couples frontier language models with a computer algebra system to propose and verify asymptotic inequalities over appropriately chosen subdomains.
+    </p>
+  </div>
+
+  <div class="container">
+
+    <p>
+      This article describes the <em>Decompositions Project</em>, an implementation of an <strong>LLM-CAS</strong> framework that aims to verify asymptotic inequalities by combining two capabilities: (i) a large language model (LLM) that proposes <em>natural</em> domain decompositions, and (ii) a computer algebra system (CAS) that attempts a <em>rigorous</em> verification of each decomposed region. In building this project, we confirm Terry Tao's prediction that an AI tool can help rigorously prove asymptotic inequalities. Our tool is able to completely prove all questions asked by Terry <a href="https://mathoverflow.net/a/463940/91878">here</a>.
+    </p>
+
+    <div class="def">
+      <h3>Definition</h3>
+      <p>
+        Let \(f\) and \(g\) be non-negative functions on a domain \(D\). We write \(f \ll g\) if there exists a constant \(C &gt; 0\) such that
+      </p>
+      <div class="eqn">
+        <p style="margin: 0;">\(\forall x \in D, \; f(x) \leq C \cdot g(x).\)</p>
+      </div>
+      <p>
+        This is the usual big-O relation, stated uniformly on \(D\).
+      </p>
+    </div>
+
+    <h2>What the Tool Proves</h2>
+
+    <h3>1) Series bound</h3>
+    <p>
+      For parameters \(h &gt; 1, m &gt; 1\), consider
+    </p>
+    <div class="eqn">
+      <p>
+        \[ S(h,m) := \sum_{d=0}^{\infty} \frac{2d+1}{2h^2\Big(1+\frac{d(d+1)}{h^2}\Big)\Big(1+\frac{d(d+1)}{h^2 m^2}\Big)^2}. \]
+      </p>
+    </div>
+    <p>
+      The framework verifies
+    </p>
+    <div class="eqn">
+      <p>
+        \[ S(h,m) \ll 1 + \log(m^2), \quad \text{uniformly for } h &gt; 1, m &gt; 1. \]
+      </p>
+    </div>
+
+    <h3>2) Functional inequality</h3>
+    <p>
+      For \(x &gt; 0, y &gt; 1\), the framework verifies
+    </p>
+    <div class="eqn">
+      <p>
+        \[ x \cdot y \leq y \log y + e^x. \]
+      </p>
+    </div>
+
+    <h2>How it Works</h2>
+    <ol>
+      <li>The user specifies the inequality or series to check.</li>
+      <li>The LLM suggests subdomains or breakpoints where the inequality is expected to simplify.</li>
+      <li>The CAS reduces each part, approximating summands if necessary, and checks them with <code>Resolve</code>.</li>
+      <li>If every piece is certified, the inequality is proven globally.</li>
+    </ol>
+
+    <h2>Relation to Tao’s Notes</h2>
+    <p>
+      The design follows Tao’s idea that effective decompositions can make asymptotic proofs manageable. See
+      <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">this blog post</a> and
+      <a href="https://mathoverflow.net/a/463940/91878">his MathOverflow remarks</a>.
+    </p>
+
+  </div>
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+</body>
+</html>
