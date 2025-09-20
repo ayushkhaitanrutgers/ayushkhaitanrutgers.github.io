@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Typography & Body */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    /* Hero/Header Section */
+    .hero {
+      background-color: #1a73e8;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0 0 12px 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #f0f0f0;
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 860px;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 30px 24px;
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+      font-family: 'Roboto Slab', serif;
+      color: #1a73e8;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+    h2 { margin-top: 40px; }
+    h3 { font-size: 1.1em; margin-top: 32px; }
+
+    /* Paragraphs & Lists */
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+
+    /* Asides / Blocks */
+    .def, .eqn, .note, .callout, .codeblock {
+      border-left: 4px solid #1a73e8;
+      background: #f5f9ff;
+      padding: 14px 16px;
+      margin: 18px 0;
+      border-radius: 6px;
+    }
+    .def h3, .eqn h3, .note h3, .callout h3 {
+      margin-top: 0;
+      color: #1a73e8;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Inline code & pre blocks */
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #f3f3f3;
+      padding: 1px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    pre {
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 14px 16px;
+      overflow-x: auto;
+      border-radius: 8px;
+      font-size: 0.92em;
+      line-height: 1.6;
+    }
+
+    /* Hyperlinks */
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover { color: #0c47b7; text-decoration: underline; }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { padding: 40px 20px; }
+      .hero h1 { font-size: 1.8em; }
+      .hero p { font-size: 16px; }
+      .container { padding: 20px 16px; margin-bottom: 30px; }
+      p, li { font-size: 16px; }
+      h1 { font-size: 1.8em; }
+      h2 { font-size: 1.5em; }
+      h3 { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>LLM-CAS: A Decomposition-Driven Framework for Asymptotic Inequalities</h1>
+    <p>
+      A formal, decomposition-first workflow that couples frontier language models with a computer algebra system to propose and verify asymptotic inequalities over appropriately chosen subdomains.
+    </p>
+  </div>
+
+  <!-- Main -->
+  <div class="container">
+
+    <h2>Overview</h2>
+    <p>
+      This article describes the <em>Decompositions Project</em>, an implementation of an <strong>LLM-CAS</strong> framework that aims to verify asymptotic inequalities by combining two capabilities: (i) a large language model (LLM) that proposes <em>natural</em> domain decompositions, and (ii) a computer algebra system (CAS) that attempts a <em>rigorous</em> verification of each decomposed region. The repository is available at:
+    </p>
+    <p class="callout">
+      <a href="https://github.com/ayushkhaitanrutgers/decompositions-project">https://github.com/ayushkhaitanrutgers/decompositions-project</a>
+    </p>
+    <p>
+      The project addresses two related tasks:
+    </p>
+    <ol>
+      <li><strong>Functional inequalities:</strong> given functions <em>f</em> and <em>g</em>, determine whether <em>f ≪ g</em> by decomposing the domain into subdomains on which the estimate is straightforward.</li>
+      <li><strong>Series inequalities:</strong> given a series <em>S</em> and a candidate upper bound <em>g</em>, propose natural breakpoints and verify that each partial range satisfies <em>S<sub>a,b</sub> ≪ g</em>.</li>
+    </ol>
+
+    <div class="def">
+      <h3>Definition</h3>
+      <p>
+        Let <em>f</em> and <em>g</em> be non-negative functions on a domain <em>D</em>. We write <strong><em>f ≪ g</em></strong> if there exists a constant <em>C &gt; 0</em> such that
+      </p>
+      <div class="eqn">
+        <h3>Equation</h3>
+        <p style="margin: 0;">∀x ∈ D, &nbsp; f(x) ≤ C · g(x).</p>
+      </div>
+      <p>Equivalently, <em>f = O(g)</em> in the conventional analytic notation, provided the relevant quantities are finite on <em>D</em>.</p>
+    </div>
+
+    <h2>Motivation and Positioning</h2>
+    <p>
+      Many asymptotic inequalities become substantially simpler once the domain is partitioned into subdomains where a single mechanism dominates (for example, a leading term or a monotonic regime). The central difficulty is <em>identifying</em> an effective partition. The LLM-CAS framework delegates the search for such partitions to a frontier LLM and then seeks <em>formal</em> verification via a CAS.
+    </p>
+    <p>
+      This direction responds to suggestions by Terence Tao that automated tools could be beneficial if they (a) propose appropriate decompositions and (b) verify estimates on each piece. The repository README explicitly references two places where Tao discusses this need:
+    </p>
+    <ul>
+      <li>
+        Blog discussion of a tool for verifying asymptotic estimates:
+        <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">
+          “A proof of concept tool to verify estimates”
+        </a>.
+      </li>
+      <li>
+        MathOverflow thread motivating automated checks and case-splits in asymptotics:
+        <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940">
+          “What mathematical problems can be attacked using DeepMind’s recent mathematical breakthroughs?”
+        </a>.
+      </li>
+    </ul>
+
+    <h2>Approach</h2>
+    <p>
+      The framework is intentionally modular. The LLM suggests a finite cover of the domain by subdomains
+      <span style="white-space:nowrap;">D = ⋃<sub>i=1</sub><sup>k</sup> D<sub>i</sub></span>,
+      selected so that each local inequality is expected to reduce to simple comparisons. The CAS then attempts to certify each local statement using first-order methods (quantifier elimination) where feasible.
+    </p>
+
+    <h3>High-Level Workflow</h3>
+    <ol>
+      <li><strong>Problem specification.</strong> The user provides a functional inequality <em>f, g, D</em>, or a series inequality <em>S, g</em>, in a simple Python format (see <code>examples.py</code>).</li>
+      <li><strong>Decomposition proposal.</strong> The LLM proposes subdomains (for functions) or index breakpoints (for series) expected to make the verification straightforward.</li>
+      <li><strong>Symbolic reduction.</strong> Where a summand or integrand is complex, the system obtains a dominating simplified form on each subdomain by comparing leading terms (e.g., numerator/denominator order and positivity constraints).</li>
+      <li><strong>Verification.</strong> The CAS (Mathematica, via <code>wolframscript</code>) applies <code>Resolve[ ]</code> to confirm that <em>f ≤ C·g</em> on each <em>D<sub>i</sub></em>, for a constant <em>C</em> drawn from a specified search range.</li>
+      <li><strong>Aggregation.</strong> If every subproblem is certified, the original inequality holds on <em>D</em>.</li>
+    </ol>
+
+    <div class="note">
+      <h3>Note on constants</h3>
+      <p>
+        For series inequalities, the tool searches over a finite grid of constants (e.g., from 1 to 10<sup>4</sup>). If no constant in this range certifies a subrange, users are encouraged to adjust the decomposition and re-attempt verification.
+      </p>
+    </div>
+
+    <h2>Why Mathematica for Verification?</h2>
+    <p>
+      SMT solvers like Z3 and many first-order provers often struggle with transcendental functions such as <em>exp</em> and <em>log</em>. In experiments, tools including MetiTarski and CVC5 did not consistently certify elementary monotonicity consequences involving logarithms and exponentials. In contrast, Mathematica’s <code>Resolve[ ]</code> (which performs quantifier elimination in the applicable fragment) has been effective at establishing such inequalities without resorting to numerical approximation.
+    </p>
+    <p>
+      A limitation is that Mathematica is closed-source and does not emit a user-checkable proof object. Nevertheless, the system returns <code>True</code> only when it symbolically verifies the statement in first-order logic. For present purposes, this is a pragmatic choice that balances reach with reliability. The CAS layer can, in principle, be swapped for alternatives (e.g., SageMath) as future work.
+    </p>
+
+    <h2>Two Use-Cases</h2>
+
+    <h3>1) Series Decomposition</h3>
+    <p>
+      Let <em>S</em> denote a series depending on parameters, and let <em>g</em> be a proposed upper bound. The framework asks the LLM to propose breakpoints
+      <span style="white-space:nowrap;">0 = d<sub>0</sub> &lt; d<sub>1</sub> &lt; … &lt; d<sub>k</sub> &lt; ∞</span>
+      such that each partial sum <em>S<sub>d<sub>i</sub>, d<sub>i+1</sub></em></em> is easy to bound by <em>C·g</em> for some constant <em>C</em>. The CAS then attempts to certify each partial inequality.
+    </p>
+    <div class="def">
+      <h3>Definition</h3>
+      <p>
+        For integers a &lt; b, define the partial sum:
+      </p>
+      <div class="eqn">
+        <h3>Equation</h3>
+        <p style="margin: 0;">
+          S<sub>a,b</sub> := ∑<sub>n=a</sub><sup>b-1</sup> s(n).
+        </p>
+      </div>
+      <p>
+        The target is to show S = S<sub>0,∞</sub> ≪ g by proving S<sub>d<sub>i</sub>, d<sub>i+1</sub></sub> ≪ g for all i and aggregating.
+      </p>
+    </div>
+    <p>
+      Because <code>Resolve[ ]</code> operates within first-order logic, the summand is simplified on each subrange using dominant-term reasoning (for example, extracting leading terms of rational expressions where denominators are strictly positive on the subdomain). When denominators are not sums of positive terms, additional care is needed to avoid spurious upper bounds.
+    </p>
+
+    <h3>2) Functional Inequalities</h3>
+    <p>
+      For inequalities of the form <em>f(x) ≪ g(x)</em> on a domain <em>D</em>, the LLM suggests subdomains <em>D<sub>i</sub></em> across which both <em>f</em> and <em>g</em> have stable leading behavior (e.g., monotonicity regions, thresholds, dyadic ranges). The CAS then attempts a direct first-order proof of <em>f ≤ C·g</em> on each region.
+    </p>
+
+    <h2>Relation to Questions by Terence Tao</h2>
+    <p>
+      The project is designed with two aims that align with Tao’s public commentary:
+    </p>
+    <ol>
+      <li><strong>Proposing decompositions.</strong> Automatically proposing subdomain or index-range decompositions so that estimates become straightforward.</li>
+      <li><strong>Verifying each piece.</strong> Rigorously checking each piece with a symbolic engine instead of numerical sampling.</li>
+    </ol>
+    <p>
+      For background and motivating examples, see Tao’s blog post <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">“A proof of concept tool to verify estimates”</a> and his MathOverflow remarks on practical strategies for automated asymptotic estimation (linked in the project README via <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940">this thread</a>).
+    </p>
+
+    <h2>Implementation Notes</h2>
+    <p>
+      The repository is organized as follows (principal files only):
+    </p>
+    <ul>
+      <li><code>examples.py</code>: Input patterns for problems (functional and series) and example configurations.</li>
+      <li><code>cli.py</code>: Command-line entry points (<code>decomp prove ...</code>, <code>decomp series ...</code>).</li>
+      <li><code>mathematica_export.py</code>: Interface to Mathematica via <code>wolframscript</code>; orchestrates verification.</li>
+      <li><code>llm_client.py</code>: LLM access and prompting for decomposition proposals.</li>
+      <li><code>series_summation.py</code>, <code>math_functions.py</code>, <code>shared.py</code>, <code>axioms.py</code>: Support routines for simplification, domain handling, and shared utilities.</li>
+      <li><code>requirements.txt</code>, <code>pyproject.toml</code>: Dependencies and packaging configuration.</li>
+      <li><code>README.md</code>: Setup and usage guidance; background links.</li>
+    </ul>
+
+    <h3>Prerequisites</h3>
+    <ul>
+      <li>Python 3.9+</li>
+      <li>Access to an LLM API (e.g., Gemini). Place the key in a local <code>.env</code> as <code>GOOGLE_API_KEY=&lt;...&gt;</code> or <code>GEMINI_API_KEY=&lt;...&gt;</code>.</li>
+      <li>Mathematica with <code>wolframscript</code> available on <code>PATH</code>.
+        If not, set <code>WOLFRAMSCRIPT=/path/to/wolframscript</code>.</li>
+    </ul>
+
+    <h3>Installation</h3>
+    <pre><code>pip install -r requirements.txt
+echo "GOOGLE_API_KEY=your_api_key_here" &gt; .env  # or GEMINI_API_KEY
+# Optional, if not auto-detected:
+export WOLFRAMSCRIPT=/usr/local/bin/wolframscript
+</code></pre>
+
+    <h3>Running</h3>
+    <p>
+      The simplest sanity check is:
+    </p>
+    <pre><code>python mathematica_export.py
+</code></pre>
+    <p>
+      To attempt a functional inequality (after adding it to <code>examples.py</code>):
+    </p>
+    <pre><code>decomp prove question_&lt;id&gt;
+</code></pre>
+    <p>
+      To attempt a series inequality:
+    </p>
+    <pre><code>decomp series series_&lt;id&gt;
+</code></pre>
+
+    <h2>Design Choices</h2>
+
+    <h3>LLM for Decomposition</h3>
+    <p>
+      The LLM is asked to propose subdomains where the inequality is expected to be simple. For series, the proposal is a finite list of breakpoints ending with <em>∞</em>; for functions, a finite partition of the domain. These suggestions can be edited by the user if a piece seems unnecessarily complex.
+    </p>
+
+    <h3>CAS for Verification</h3>
+    <p>
+      Mathematica’s <code>Resolve[ ]</code> is used to attempt a symbolic proof in each region. Where direct verification is difficult, the pipeline simplifies expressions by identifying leading-term behavior and imposing positivity constraints to maintain valid upper bounds.
+    </p>
+
+    <h2>Limitations and Future Directions</h2>
+    <ul>
+      <li><strong>Proof objects.</strong> Mathematica does not emit a machine-checkable proof certificate. A future direction is exporting verified cases into a formal system (e.g., Lean) for certified proof terms.</li>
+      <li><strong>Transcendentals and scope.</strong> While <code>Resolve[ ]</code> is strong, some mixed symbolic-transcendental statements remain out of reach. Further decomposition, additional invariants, or alternate CAS backends may help.</li>
+      <li><strong>Automatic upper bounds for summands.</strong> Having the LLM propose tight elementary upper bounds for summands remains challenging. Presently, deriving regime-wise dominant terms within the CAS is more reliable.</li>
+      <li><strong>Search over constants.</strong> The grid over <em>C</em> is finite. If a problem requires a substantially larger constant, users should adjust the search range or decomposition.</li>
+    </ul>
+
+    <h2>Summary</h2>
+    <p>
+      The LLM-CAS framework is a practical pathway toward automating asymptotic estimation: the LLM proposes case splits that align with mathematical heuristics, and the CAS executes first-order verification on each piece. The implementation supports both functional and series inequalities, emphasizes regime-appropriate simplifications, and adopts a verification-first philosophy rather than numerical experimentation. The project directly addresses two goals articulated by Terence Tao—proposing effective decompositions and verifying each piece—and is intended as a step toward dependable AI support for research-level analysis.
+    </p>
+
+    <hr>
+
+    <h2>References & Links</h2>
+    <ul>
+      <li>Repository: <a href="https://github.com/ayushkhaitanrutgers/decompositions-project">Decompositions Project</a></li>
+      <li>Terence Tao, <a href="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">A proof of concept tool to verify estimates</a></li>
+      <li>MathOverflow (linked in README): <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940">What problems can be attacked using DeepMind’s recent mathematical breakthroughs?</a></li>
+    </ul>
+
+  </div>
+</body>
+</html>
