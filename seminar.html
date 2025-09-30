@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MATH 495 · Machine Learning — Resources & Schedule</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --brand:#1a73e8; --ink:#2e2e2e; --muted:#606570; --bg:#f7f9fc; --card:#fff;
-      --shadow:0 10px 24px rgba(0,0,0,.06); --radius:14px; --ring:0 0 0 3px rgba(26,115,232,.18);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:var(--ink); background:var(--bg); line-height:1.75;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-    }
-    a{color:var(--brand);text-decoration:none;font-weight:600}
-    a:hover{text-decoration:underline}
-
-    .hero{
-      background:linear-gradient(135deg,#1a73e8,#4b90ff); color:#fff; text-align:center;
-      padding:64px 20px 48px; border-radius:0 0 18px 18px; box-shadow:var(--shadow);
-    }
-    .hero h1{margin:0 0 8px; font-family:'Roboto Slab',serif; font-size:clamp(28px,4vw,40px)}
-    .hero p{margin:0 auto; max-width:860px; font-size:clamp(16px,2.2vw,18px); color:#e9f0ff}
-
-    .container{max-width:1000px; margin:28px auto; padding:0 18px}
-    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:26px 22px}
-
-    h2,h3{font-family:'Roboto Slab',serif; color:var(--brand); margin:10px 0 8px}
-    p{color:var(--muted)}
-
-    .meta{
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px;
-      background:#f1f6ff; border:1px solid #e1ecff; border-radius:10px; padding:12px 14px; margin:14px 0 4px; font-size:15px;
-    }
-    .meta b{color:#0c47b7}
-
-    .schedule-wrap{overflow-x:auto}
-    table{width:100%; border-collapse:collapse; margin-top:8px; min-width:720px}
-    caption{caption-side:top; text-align:left; font-weight:700; color:var(--ink); margin-bottom:8px}
-    th,td{padding:12px 10px; text-align:left; border-bottom:1px solid #eaecef; vertical-align:top}
-    th{background:#f8fafc; font-weight:700}
-    tbody tr:nth-child(even){background:#fbfdff}
-
-    .materials{margin:0; padding-left:18px; color:var(--muted)}
-    .materials li{margin:2px 0}
-    .blank{display:inline-block; min-width:200px; min-height:1.1em; border-bottom:1px dashed #cbd5e1; vertical-align:baseline}
-
-    footer{margin:22px 0 40px; font-size:14px; color:#667085; text-align:center}
-
-    a:focus,button:focus,[tabindex]:focus{outline:none; box-shadow:var(--ring); border-radius:10px}
-    @media (max-width:720px){.hero{padding:48px 16px 32px} .card{padding:20px 16px} p{font-size:16px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLMs and Mathematics Seminar</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+</style>
 </head>
 <body>
-  <header class="hero" role="banner">
-    <h1>MATH 495 · Machine Learning</h1>
-    <p>Resources, weekly notes, and quizzes. We follow the MIT 6.867 outline.</p>
-  </header>
 
-  <main class="container" role="main">
-    <section class="card" aria-labelledby="overview">
-      <h2 id="overview">Overview</h2>
-      <p>
-        Core reference:
-        <a href="https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/pages/lecture-notes/" target="_blank" rel="noopener">MIT 6.867 Lecture Notes</a>.
-      </p>
-      <div class="meta" aria-label="Course quick facts">
-        <div><b>Instructor:</b> Ayush Khaitan</div>
-        <div><b>Term:</b> Fall 2025</div>
-        <div><b>Time:</b> TBA</div>
-        <div><b>Location:</b> SC-119</div>
-        <div><b>Office Hours:</b> TBA</div>
-        <div><b>Course Tools:</b> Canvas · Gradescope · GitHub</div>
-      </div>
-    </section>
+<div class="container">
+  <h1>LLMs and Mathematics Seminar</h1>
+  <p>Join us for our weekly seminar series exploring the intersection of Large Language Models (LLMs) and Mathematics. The seminars are held on Thursdays from 3:30–4:30 PM in Hill 423 (note the change in location). Please send a message at ayush.khaitan@rutgers.edu to be included in the mailing list. </p>
+  
+  <h2>Seminar Schedule</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Speaker</th>
+        <th>Title of the Talk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>February 20, 2025</td>
+        <td>Alex Sanchez-Stern (DModel)</td>
+        <td>Synthesizing Proofs of Software Correctness with AI. <a href="https://www.alexsanchezstern.com/talks/jmm-rutgers-variant/">Slides</a></td>
+      </tr>
+      <tr>
+        <td>February 27, 2025</td>
+        <td>Alex Kontorovich (Rutgers and the IAS)</td>
+        <td>Some thoughts on Math+AI</td>
+      </tr>
+      <tr>
+        <td>March 6, 2025</td>
+        <td>Kyu-Hwan Lee (University of Connecticut)</td>
+        <td>Mathematical Data Science</td>
+      </tr>
+      <tr>
+        <td>March 13, 2025</td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+      <!-- Spring Break: March 15–March 23 -->
+      <tr>
+        <td>March 27, 2025</td>
+        <td>Thomas Hubert (Google DeepMind)</td>
+        <td>From AlphaGo to AlphaProof and the future of mathematics</td>
+      </tr>
+      <tr>
+        <td>April 3, 2025</td>
+        <td>Kaiyu Yang (FAIR, Meta)</td>
+        <td>Formal Reasoning Meets LLMs: Toward AI for Mathematics and Verification</td>
+      </tr>
+      <tr>
+        <td>April 17, 2025</td>
+        <td>Pan Lu (Stanford)</td>
+        <td>Advancing Complex Reasoning with Language Models and Agentic Systems</td>
+      </tr>
+      <tr>
+        <td>April 17, 2025</td>
+        <td>Patrick Shafto (Rutgers, Newark)</td>
+        <td>Beyond Proof: AI & Mathematics</td>
+      </tr>
+      <tr>
+        <td>May 1, 2025</td>
+        <td>Claudio Gentile (Google Research)</td>
+        <td>Rates of convergence in Pool-Based Batch Active Learning</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <section class="card" aria-labelledby="schedule">
-      <h2 id="schedule">Lecture Schedule & Upload Targets</h2>
-      <div class="schedule-wrap">
-        <table>
-          <caption>Lectures (ordered to mirror MIT 6.867)</caption>
-          <thead>
-            <tr>
-              <th style="width:80px;">#</th>
-              <th>Topic</th>
-              <th style="width:360px;">Materials</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Lecture 01</td>
-              <td>Introduction, linear classification, perceptron update rule</td>
-              <td>
-                <ul class="materials">
-                  <li>Lecture notes: <a href="./Lecture_1__notes.pdf">Lecture_1__notes.pdf</a></li>
-                  <li>Quiz: <a href="./Lec_1.pdf">Lec_1.pdf</a></li>
-                </ul>
-              </td>
-            </tr>
-            <tr><td>Lecture 02</td><td>Perceptron convergence, generalization</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 03</td><td>Maximum margin classification</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 04</td><td>Classification errors, regularization, logistic regression</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 05</td><td>Linear regression, estimator bias &amp; variance, active learning</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 06</td><td>Active learning (cont.), non-linear predictions, kernels</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 07</td><td>Kernel regression, kernels</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 08</td><td>Support vector machines (SVMs) &amp; kernels; kernel optimization</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 09</td><td>Model selection</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 10</td><td>Model selection criteria</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 11</td><td>Description length (MDL), feature selection</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 12</td><td>Combining classifiers, boosting</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 13</td><td>Boosting, margin, and complexity</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 14</td><td>Margin &amp; generalization, mixture models</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 15</td><td>Mixtures and the expectation–maximization (EM) algorithm</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 16</td><td>EM, regularization, clustering</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 17</td><td>Clustering</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 18</td><td>Spectral clustering, Markov models</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 19</td><td>Hidden Markov models (HMMs)</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 20</td><td>HMMs (cont.)</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 21</td><td>Bayesian networks</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 22</td><td>Learning Bayesian networks</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 23</td><td>Probabilistic inference; guest lecture: collaborative filtering</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-            <tr><td>Lecture 24</td><td>Current problems in machine learning; wrap up</td><td><ul class="materials"><li>Lecture notes: <span class="blank"></span></li><li>Quiz: <span class="blank"></span></li></ul></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    Last updated: September 2025 · Rutgers Mathematics
-  </footer>
 </body>
 </html>
