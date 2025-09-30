@@ -6,7 +6,7 @@ My research is in conformal geometry, problems in geometry and combinatorics, as
 
 [Here](https://ricci-website.vercel.app) is a chatbot created by Mehaer Chhabda and Rohan Sharma to help mathematicians generate Ricci code for Mathematica.
 
-I also organize the [LLM's and Mathematics seminar](seminar.html). 
+In Spring 2025, I started the [LLM's and Mathematics seminar](seminar.html). We had distinguished speakers from Google Research, Institute for Advanced Study, Meta, Modal AI, Rutgers, and Stanford. In Fall 2025 and Spring 2026, I am a co-organizer of the [AI and Math seminar](https://ai-math-seminar.github.io/seminar/), and we have distinguished speakers from Amazon, Georgia Tech, Princeton, Meta, Mistral AI and Rutgers.  
 
 The main result of my PhD was [constructing](https://arxiv.org/pdf/2308.02061) fully non-linear higher analogues of Perelman's F and W functionals, that will help study the Ricci flow in all dimensions. This result is the culmination of four papers [written](https://arxiv.org/abs/2202.11153) [during](https://arxiv.org/pdf/2203.04719) [my](https://arxiv.org/pdf/2205.06018) [PhD](https://arxiv.org/pdf/2308.02061). 
 
