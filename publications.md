@@ -4,14 +4,6 @@ title: Publications
 permalink: /publications
 ---
 
-<p style="margin:0 0 1rem 0;">
-  <a href="{{ '/' | relative_url }}">Home</a> ·
-  <a href="{{ '/research' | relative_url }}">Research</a> ·
-  <a href="{{ '/publications' | relative_url }}">Publications</a> ·
-  <a href="{{ '/teaching' | relative_url }}">Teaching</a> ·
-  <a href="{{ '/misc' | relative_url }}">Misc</a>
-</p>
-
 # Publications
 
 Below is a (partial) list of my publications. For each, I plan to add a short summary / “story behind it” section.
