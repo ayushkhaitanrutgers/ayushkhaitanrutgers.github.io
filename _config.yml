@@ -1,1 +1,32 @@
+# Existing title
 title: "Ayush Khaitan's webpage"
+
+# (You can add a description too, optional)
+description: "Mathematics, Geometry, AI & Math"
+
+# If not already present, set these (or leave blank if GitHub Pages default)
+url: ""
+baseurl: ""
+
+# Theme — make sure this matches your current theme name
+theme: minima   # or whatever theme you currently use
+
+# Navigation / header pages
+header_pages:
+  - index.md
+  - research.md
+  - publications.md
+  - teaching.md
+  - misc.md
+
+# Include non-standard files (so Jekyll won’t ignore your image etc.)
+include:
+  - ayush.png
+
+# Permalinks & markdown setup
+permalink: pretty
+markdown: kramdown
+
+# Optionally, exclude files you don't want in site output
+exclude:
+  - README.md
