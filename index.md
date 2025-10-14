@@ -3,14 +3,6 @@ layout: default
 title: Home
 ---
 
-<p style="margin:0 0 1rem 0;">
-  <a href="{{ '/' | relative_url }}">Home</a> ·
-  <a href="{{ '/research' | relative_url }}">Research</a> ·
-  <a href="{{ '/publications' | relative_url }}">Publications</a> ·
-  <a href="{{ '/teaching' | relative_url }}">Teaching</a> ·
-  <a href="{{ '/misc' | relative_url }}">Misc</a>
-</p>
-
 <p>
   <img src="{{ 'ayush.png' | relative_url }}" alt="Ayush Khaitan" width="200" style="border-radius:50%; margin:0.5rem 0;">
 </p>
