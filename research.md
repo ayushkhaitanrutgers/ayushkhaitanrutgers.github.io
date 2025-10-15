@@ -14,7 +14,7 @@ permalink: /research
     <div class="card__body">
       <p>My work in this area involves constructing AI tools that can be useful in mathematics research. This involves training and fine-tuning LLMs, and integrating LLMs with computer algebra systems. Using an <a href="https://arxiv.org/abs/2510.12350">LLM+CAS framework</a>, we were recently able to answer a question of Terence Tao by constructing an AI tool that can prove research-level inequalities from several mathematical domains.</p>
       <p>I also run a large research group of undergraduates, in which we construct AI tools that can be useful for Mathematicians. One group of students has built <a href="https://github.com/SiddarthNarayanan01/darwin">Darwin</a> a version of Google’s FunSearch that's faster and more efficient for some types of computations, especially combinatorics. Using this, they were able to construct a combinatorial example in 25 minutes that had previously taken 3 days of compute. Another group of students has <a href="https://ricci-website.vercel.app">fine-tuned</a> an LLM on Mathematica’s Ricci package.</p>
-      <p>I also co-organize an <a href="https://ai-math-seminar.github.io/seminar/">AI for Mathematics/</a> <a href="/seminar.html">seminar.html</a>). This semester, I am teaching an Intro to Proofs course based on Lean, and a graduate course in machine learning.</p>
+      <p>I also co-organize an <a href="https://ai-math-seminar.github.io/seminar/">AI for Mathematics</a> <a href="/seminar.html">seminar</a>). This semester, I am teaching an Intro to Proofs course based on Lean, and a graduate course in machine learning.</p>
     </div>
   </article>
 
@@ -22,8 +22,8 @@ permalink: /research
   <article class="card">
     <h2 class="card__title">Geometric analysis and conformal geometry</h2>
     <div class="card__body">
-      <p>In my PhD, I have constructed an infinite family of fully non-linear analogues of Perelman’s W-functional, that are monotone along the Ricci flow (<a href="https://arxiv.org/abs/2308.02061">arXiv:2308.02061</a>).</p>
-      <p>During my postdoc, I have fully proved a conjecture of Bhargav Narayanan, and partially solved the problem of proving sharp lower bounds on the permanent of a matrix, using tools from geometric analysis (<a href="https://arxiv.org/abs/2505.12178">arXiv:2505.12178</a>). Proving sharp lower bounds on the permanent of a matrix is an old, central problem in statistical mechanics, theoretical computer science and combinatorics, and we were surprisingly able to make progress on this question using monotone flows and differential operators.</p>
+      <p>In my PhD, I have <a href="https://arxiv.org/abs/2308.02061">constructed</a> an infinite family of fully non-linear analogues of Perelman’s W-functional, that are monotone along the Ricci flow.</p>
+      <p>During my postdoc, I have fully proved a conjecture of Bhargav Narayanan, and partially <a href="https://arxiv.org/abs/2505.12178">solved</a> the problem of proving sharp lower bounds on the permanent of a matrix, using tools from geometric analysis. Proving sharp lower bounds on the permanent of a matrix is an old, central problem in statistical mechanics, theoretical computer science and combinatorics, and we were surprisingly able to make progress on this question using monotone flows and differential operators.</p>
     </div>
   </article>
 
