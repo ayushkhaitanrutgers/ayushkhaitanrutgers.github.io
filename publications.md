@@ -16,7 +16,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan, <a href="https://www.cc.gatech.edu/people/vijay-ganesh">Vijay Ganesh</a></div>
     <div class="pub__meta">ICLR 2026 (submitted), 2025 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2510.12350">arXiv:2510.12350</a></div>
     <div class="pub__summary">
-      We build an LLM+CAS framework that proves research‑level asymptotic inequalities. Using it, we resolve multiple questions from MathOverflow and other research forums. This answers a question posed by Terence Tao about whether such a tool can be built in the first place.
+      We build an LLM+CAS framework that proves research‑level asymptotic inequalities. Using it, we resolve multiple questions from MathOverflow and other research forums. This answers a <a hef="https://mathoverflow.net/a/463940/91878">question</a> <a hef="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">posed</a> <a hef="https://terrytao.wordpress.com/2025/05/09/a-tool-to-verify-estimates-ii-a-flexible-proof-assistant/comment-page-1/#comment-688872">by</a> Terence Tao.
     </div>
   </article>
 
@@ -36,7 +36,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> <a href="https://sites.google.com/view/jeffreyscase">Jeffrey Case</a>, <a href="https://sites.google.com/view/yuehjulin">Yueh‑Ju Lin</a>, <a href="https://aaron-tyrrell.com">Aaron Tyrrell</a>, <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=241215">Wei Yuan</a>, Ayush Khaitan</div>
     <div class="pub__meta">Submitted, 2024 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2404.11319">arXiv:2404.11319</a></div>
     <div class="pub__summary">
-      We describe a general procedure for constructing renormalized curvature integrals on Poincaré–Einstein manifolds, providing a systematic route to explicit curvature formulas and their analytic properties.
+      We describe a general procedure for constructing renormalized curvature integrals on Poincaré–Einstein manifolds.
     </div>
   </article>
 
@@ -46,7 +46,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
     <div class="pub__meta"><em>Advances in Mathematics</em> (accepted), 2023 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2308.02061">arXiv:2308.02061</a></div>
     <div class="pub__summary">
-      We construct fully non‑linear analogues of Perelman’s \(\mathcal W\)‑functional that are monotone along the Ricci flow and stationary only for shrinking Ricci solitons, via a Fefferman–Graham ambient metric adapted to manifolds with density.
+      We construct fully non‑linear analogues of Perelman’s \(\mathcal W\)‑functional that are monotone along the Ricci flow, and stationary only for shrinking Ricci solitons. We do so by constructing a Fefferman–Graham ambient metric for manifolds with density.
     </div>
   </article>
 
@@ -56,7 +56,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> <a href="http://www.personal.psu.edu/jqc5026/">Jeffrey S. Case</a>, Ayush Khaitan</div>
     <div class="pub__meta"><em>SIGMA</em> <strong>18</strong> (2022), 086, 21 pages &nbsp;•&nbsp; <a href="https://www.emis.de/journals/SIGMA/2022/086/">Journal link</a></div>
     <div class="pub__summary">
-      We construct the Fefferman–Graham ambient metric for smooth metric measure spaces, laying the groundwork for weighted curvature invariants and applications.
+      We construct the Fefferman–Graham ambient metric for smooth metric measure spaces.
     </div>
   </article>
 
@@ -66,7 +66,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
     <div class="pub__meta">Submitted, 2022 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2203.04719">arXiv:2203.04719</a></div>
     <div class="pub__summary">
-      We construct GJMS operators in the weighted setting, extending the conformally covariant family to smooth metric measure spaces and linking ambient methods with analysis on manifolds with density.
+      We construct GJMS operators for smooth metric measure spaces, and prove several properties.
     </div>
   </article>
 
@@ -76,7 +76,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
     <div class="pub__meta">Submitted, 2022 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2205.06018">arXiv:2205.06018</a></div>
     <div class="pub__summary">
-      We construct renormalized volume coefficients for smooth metric measure spaces and prove several key properties, extending conformal/renormalization techniques to weighted geometries.
+      We construct renormalized volume coefficients for smooth metric measure spaces and prove several key properties.
     </div>
   </article>
 
