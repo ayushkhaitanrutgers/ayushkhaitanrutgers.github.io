@@ -10,7 +10,6 @@ title: Home
 # Ayush Khaitan
 
 Hill Assistant Professor, Rutgers University, New Brunswick  
-Mathematics ∙ AI & Math  
 
 I work at the intersection of geometry, combinatorics, and AI for mathematics.  
 You can explore my **Research**, **Publications**, **Teaching**, and **Miscellaneous** pages using the tabs above.
