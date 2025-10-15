@@ -8,7 +8,6 @@ permalink: /publications
 <section id="publications" class="pubs">
 
   <h1 class="pubs__title">Publications</h1>
-  <p class="pubs__intro">A flowing list of papers with concise, always‑visible summaries.</p>
 
   <!-- Paper: LLM–CAS -->
   <article class="pub">
@@ -46,7 +45,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
     <div class="pub__meta"><em>Advances in Mathematics</em> (accepted), 2023 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2308.02061">arXiv:2308.02061</a></div>
     <div class="pub__summary">
-      We construct fully non‑linear analogues of Perelman’s \(\mathcal W\)‑functional that are monotone along the Ricci flow, and stationary only for shrinking Ricci solitons. We do so by constructing a Fefferman–Graham ambient metric for manifolds with density.
+      We construct fully non‑linear analogues of Perelman’s W‑functional that are monotone along the Ricci flow, and stationary only for shrinking Ricci solitons. We do so by constructing a Fefferman–Graham ambient metric for manifolds with density.
     </div>
   </article>
 
