@@ -14,7 +14,7 @@ permalink: /research
     <div class="card__body">
       <p>My work in this area involves constructing AI tools that can be useful in mathematics research. This involves training and fine-tuning LLMs, and integrating LLMs with computer algebra systems. Using an <a href="https://arxiv.org/abs/2510.12350">LLM+CAS framework</a>, we were recently able to answer a question of Terence Tao by constructing an AI tool that can prove research-level inequalities from several mathematical domains.</p>
       <p>I also run a large research group of undergraduates, in which we construct AI tools that can be useful for Mathematicians. One group of students has built <a href="https://github.com/SiddarthNarayanan01/darwin">Darwin</a> a version of Google’s FunSearch that's faster and more efficient for some types of computations, especially combinatorics. Using this, they were able to construct a combinatorial example in 25 minutes that had previously taken 3 days of compute. Another group of students has <a href="https://ricci-website.vercel.app">fine-tuned</a> an LLM on Mathematica’s Ricci package.</p>
-      <p>I also co-organize an <a href="https://ai-math-seminar.github.io/seminar/">AI for Mathematics</a> <a href="/seminar.html">seminar</a>). This semester, I am teaching an Intro to Proofs course based on Lean, and a graduate course in machine learning.</p>
+      <p>I also co-organize an <a href="https://ai-math-seminar.github.io/seminar/">AI for Mathematics</a> seminar. I started the AI and Mathematics <a href="/seminar.html">seminar</a> at Rutgers in Spring 2025. This semester, I am teaching an Intro to Proofs course based on Lean, and a graduate course in machine learning.</p>
     </div>
   </article>
 
