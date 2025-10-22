@@ -7,6 +7,7 @@ permalink: /teaching
 <section id="teaching" class="res">
 
   <h1 class="res__title">Teaching</h1>
+  I have taught several courses at both Rutgers and Penn State, like Trigonometry, Calculus, History of Mathematics, Probability and Statistics, Dynamical Models in Biology, etc. I elaborate on two such courses below, both of which I am teaching this semester. 
 
   <!-- ===== AI for Mathematics ===== -->
   <article class="card">
