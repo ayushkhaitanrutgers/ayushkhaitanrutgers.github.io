@@ -15,7 +15,7 @@ permalink: /publications
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan, <a href="https://www.cc.gatech.edu/people/vijay-ganesh">Vijay Ganesh</a></div>
     <div class="pub__meta">Submitted, 2025 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2510.12350">arXiv:2510.12350</a></div>
     <div class="pub__summary">
-      We build an LLM+CAS framework that proves research‑level asymptotic inequalities. Using it, we resolve multiple questions from MathOverflow and other research forums. This answers a <a hef="https://mathoverflow.net/a/463940/91878">question</a> <a hef="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">posed</a> <a hef="https://terrytao.wordpress.com/2025/05/09/a-tool-to-verify-estimates-ii-a-flexible-proof-assistant/comment-page-1/#comment-688872">by</a> Terence Tao.
+      We build an LLM+CAS framework that proves research‑level asymptotic inequalities. Using it, we resolve multiple questions from MathOverflow and other research forums. This answers a <a hef="https://mathoverflow.net/a/463940/91878">question</a> <a hef="https://terrytao.wordpress.com/2025/05/01/a-proof-of-concept-tool-to-verify-estimates/">posed</a> <a hef="https://terrytao.wordpress.com/2025/05/09/a-tool-to-verify-estimates-ii-a-flexible-proof-assistant/comment-page-1/#comment-688872">by</a> Terence Tao. We are grateful for Terence's support for our project, including his highlighting of our tool <a href = "https://mathstodon.xyz/@tao/115379172603958618">here</a>. 
     </div>
   </article>
 
