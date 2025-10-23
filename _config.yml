@@ -15,7 +15,7 @@ header_pages:
   - research.md
   - publications.md
   - teaching.md
-  - misc.md
+  - llmath.md
 
 # Include non-standard files (so Jekyll won’t ignore your image etc.)
 include:
