@@ -12,4 +12,4 @@ title: Home
 Hill Assistant Professor, Rutgers University, New Brunswick  
 
 I work at the intersection of geometry, combinatorics, and AI for mathematics.  
-You can explore my **Research**, **Publications**, **Teaching**, and **Miscellaneous** pages using the tabs above.
+You can explore my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above.
