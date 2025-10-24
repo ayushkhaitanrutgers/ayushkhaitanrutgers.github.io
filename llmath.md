@@ -15,7 +15,7 @@ permalink: /research-group
       <p>
         I run a research group with some undergraduate Math and CS students. We develop AI tools
         that can help mathematicians in their research. We also fine-tune open-source models on
-        various Mathematica packages. [Here](members.html) are some of the past and present members of our group. 
+        various Mathematica packages. <a href="https://ayushkhaitanrutgers.github.io/members.html">Here</a> are some of the past and present members of our group. 
       </p>
     </div>
   </article>
