@@ -29,8 +29,20 @@ permalink: /research-group
           <div class="news__dot" aria-hidden="true"></div>
           <div class="news__content">
             <div class="news__headline">
+              Terence Tao <a href="https://mathstodon.xyz/@tao/115379172603958618">promotes</a> our AI tool!
+              <span class="chip"></span>
+            </div>
+            <p class="news__text">
+              We have created a <a href="https://o-forge.com/">tool</a>, called O-Forge, that can prove certain kinds of research-level inequalities, thereby answering a <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940#463940">question</a> of Terence Tao. <a href="https://arxiv.org/abs/2510.12350">Here</a> is the paper.
+            </p>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
               Funsearch group fully replicates DeepMind’s Funsearch
-              <span class="chip">Replication</span>
+              <span class="chip"></span>
               <a class="repo" href="https://github.com/SiddarthNarayanan01/research_v2" target="_blank" rel="noopener">GitHub</a>
             </div>
             <p class="news__text">
@@ -44,7 +56,7 @@ permalink: /research-group
           <div class="news__content">
             <div class="news__headline">
               Alpha Geometry group reproduces DeepMind’s Alpha Geometry
-              <span class="chip">Replication</span>
+              <span class="chip"></span>
             </div>
             <p class="news__text">
               Current work focuses on generalizing the pipeline to other areas of mathematics, including algebra and analysis.
