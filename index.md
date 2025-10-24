@@ -11,5 +11,8 @@ title: Home
 
 Hill Assistant Professor, Rutgers University, New Brunswick  
 
-I work at the intersection of geometry, combinatorics, and AI for mathematics. <a href="https://ayushkhaitanrutgers.github.io/CV.pdf">Here</a> is a CV. 
-You can explore my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above.
+I work in AI for mathematics, geometry, and combinatorics. 
+
+Here is <a href="https://ayushkhaitanrutgers.github.io/CV.pdf">CV</a>, which contains details of my education, research, teaching and outreach.
+
+You can also explore my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above.
