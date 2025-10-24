@@ -12,9 +12,47 @@ permalink: /research-group
   <article class="card">
     <h2 class="card__title">AI for Mathematics</h2>
     <div class="card__body">
-      <p>I run a research group with some undergraduate Math adn CS students. We develop AI tools that can help mathematicians in their research. We also fine-tune open source models on various Mathematica packages.
+      <p>
+        I run a research group with some undergraduate Math and CS students. We develop AI tools
+        that can help mathematicians in their research. We also fine-tune open-source models on
+        various Mathematica packages.
       </p>
-      </div>
+    </div>
+  </article>
+
+  <!-- ===== News ===== -->
+  <article class="card">
+    <h2 class="card__title">News</h2>
+    <div class="card__body">
+      <ul class="news">
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
+              Funsearch group fully replicates DeepMind’s Funsearch
+              <span class="chip">Replication</span>
+              <a class="repo" href="https://github.com/SiddarthNarayanan01/research_v2" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <p class="news__text">
+              The team is now building <strong>Darwin</strong> to improve efficiency and scaling of the algorithm.
+            </p>
+          </div>
+        </li>
+
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
+              Alpha Geometry group reproduces DeepMind’s Alpha Geometry
+              <span class="chip">Replication</span>
+            </div>
+            <p class="news__text">
+              Current work focuses on generalizing the pipeline to other areas of mathematics, including algebra and analysis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </article>
 
 </section>
@@ -55,8 +93,74 @@ permalink: /research-group
   }
   .card__body a:hover{ border-bottom-color: transparent; }
 
+  /* ===== News list styling ===== */
+  .news{
+    list-style: none;
+    margin: 0;
+    padding: 2px 0 0 0;
+    display: grid;
+    gap: 14px;
+  }
+
+  .news__item{
+    position: relative;
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .news__dot{
+    width: 10px; height: 10px;
+    margin-top: 9px;
+    border-radius: 999px;
+    background: #9aa6c4;
+    box-shadow: 0 0 0 3px #eef2ff inset;
+  }
+
+  .news__headline{
+    color: var(--ink);
+    font-weight: 600;
+    line-height: 1.35;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .news__text{
+    margin: 6px 0 0 0;
+    color: var(--soft);
+  }
+
+  .chip{
+    display: inline-block;
+    font-size: 0.74rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    border: 1px solid #dfe6ff;
+    color: #3347c2;
+    line-height: 1.6;
+  }
+
+  .repo{
+    margin-left: auto;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    color: #3347c2 !important;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  .repo:hover{ background: #f9fafb; }
+
   @media (max-width: 640px){
     .card__title{ font-size: 1.2rem; }
     .card__body{ font-size: 0.96rem; }
+    .news__headline{ gap: 6px; }
+    .repo{ padding: 3px 8px; }
   }
 </style>
