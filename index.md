@@ -11,6 +11,6 @@ title: Home
 
 Hill Assistant Professor, Rutgers University, New Brunswick  
 
-I work in AI for mathematics, geometry, and combinatorics. 
+I work in AI for mathematics, geometry, and combinatorics. You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume.pdf">here</a>. 
 
 You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above.
