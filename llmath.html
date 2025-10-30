@@ -1,61 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LLMs and Mathematics</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+---
+layout: default
+title: Research Group
+permalink: /research-group
+---
+
+<section id="research" class="res">
+
+  <h1 class="res__title">Research group</h1>
+
+  <!-- ===== AI for Mathematics ===== -->
+  <article class="card">
+    <h2 class="card__title">AI for Mathematics</h2>
+    <div class="card__body">
+      <p>
+        I run a research group with some undergraduate Math and CS students. We develop AI tools
+        that can help mathematicians in their research. We also fine-tune open-source models on
+        various Mathematica packages. <a href="https://ayushkhaitanrutgers.github.io/members.html">Here</a> are some of the past and present members of our group. 
+      </p>
+    </div>
+  </article>
+
+  <!-- ===== News ===== -->
+  <article class="card">
+    <h2 class="card__title">News</h2>
+    <div class="card__body">
+      <ul class="news">
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
+              Terence Tao <a href="https://mathstodon.xyz/@tao/115379172603958618">promotes</a> our AI tool!
+              <span class="chip"></span>
+            </div>
+            <p class="news__text">
+              We have created a <a href="https://o-forge.com/">tool</a>, called O-Forge, that can prove certain kinds of research-level inequalities, thereby answering a <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940#463940">question</a> of Terence Tao. <a href="https://arxiv.org/abs/2510.12350">Here</a> is the paper.
+            </p>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
+              Funsearch group fully replicates DeepMind’s Funsearch
+              <span class="chip"></span>
+              <a class="repo" href="https://github.com/SiddarthNarayanan01/research_v2" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <p class="news__text">
+              The team is now building <strong>Darwin</strong> to improve efficiency and scaling of the algorithm.
+            </p>
+          </div>
+        </li>
+
+        <li class="news__item">
+          <div class="news__dot" aria-hidden="true"></div>
+          <div class="news__content">
+            <div class="news__headline">
+              Alpha Geometry group reproduces DeepMind’s Alpha Geometry
+              <span class="chip"></span>
+            </div>
+            <p class="news__text">
+              Current work focuses on generalizing the pipeline to other areas of mathematics, including algebra and analysis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+</section>
+
 <style>
-  body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
-    padding: 20px;
+  :root{
+    --bg: #ffffff;
+    --ink: #0f172a;
+    --mute: #475569;
+    --soft: #55627a;
+    --line: #e6e8ee;
+    --chip: #f7f8fc;
+    --r: 14px;
   }
-  h1 {
-    font-family: 'Roboto Slab', serif;
-    color: #2c3e50;
-    margin-bottom: 20px;
+
+  .res{ background: var(--bg); max-width: 900px; }
+  .res__title{ margin: 0 0 6px 0; font-size: 2rem; line-height: 1.2; color: var(--ink); }
+
+  .card{ padding: 16px 0 18px 0; border-top: 1px solid var(--line); }
+  .card:first-of-type{ border-top: 0; }
+
+  .card__title{ margin: 0 0 8px 0; font-size: 1.35rem; font-weight: 650; color: var(--ink); }
+
+  .card__body{
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 14px 16px;
+    color: var(--soft);
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
-  p {
-    font-size: 18px;
-    color: #555;
-    max-width: 800px; /* Controls the maximum width of paragraphs */
-  }
-  .container {
-    max-width: 800px; /* Controls the maximum width of the container */
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  a {
-    color: #2980b9;
+
+  .card__body a{
+    color: #3347c2;
     text-decoration: none;
+    border-bottom: 1px dotted rgba(51,71,194,.35);
   }
-  a:hover {
-    text-decoration: underline;
+  .card__body a:hover{ border-bottom-color: transparent; }
+
+  /* ===== News list styling ===== */
+  .news{
+    list-style: none;
+    margin: 0;
+    padding: 2px 0 0 0;
+    display: grid;
+    gap: 14px;
   }
-  ul {
-    padding-left: 20px;
+
+  .news__item{
+    position: relative;
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .news__dot{
+    width: 10px; height: 10px;
+    margin-top: 9px;
+    border-radius: 999px;
+    background: #9aa6c4;
+    box-shadow: 0 0 0 3px #eef2ff inset;
+  }
+
+  .news__headline{
+    color: var(--ink);
+    font-weight: 600;
+    line-height: 1.35;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .news__text{
+    margin: 6px 0 0 0;
+    color: var(--soft);
+  }
+
+  .chip{
+    display: inline-block;
+    font-size: 0.74rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    border: 1px solid #dfe6ff;
+    color: #3347c2;
+    line-height: 1.6;
+  }
+
+  .repo{
+    margin-left: auto;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    color: #3347c2 !important;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  .repo:hover{ background: #f9fafb; }
+
+  @media (max-width: 640px){
+    .card__title{ font-size: 1.2rem; }
+    .card__body{ font-size: 0.96rem; }
+    .news__headline{ gap: 6px; }
+    .repo{ padding: 3px 8px; }
   }
 </style>
-</head>
-<body>
-
-<div class="container">
-  <h1>LLMs and Mathematics</h1>
-  <p>With the recent advanced in Large Language Models, it has become increasingly clear that they will play a pivotal role in the future of mathematics research. With this in mind, we intend to explore new ways of aiding mathematics researchers using LLMs.</p>
-  <p>We are currently focused on generalizing alpha geometry to other fields of mathematics like analysis and algebra, improving the Funsearch algorithm by DeepMind, and also fine tuning LLMs on specialized Mathematica packages like <a href="https://sites.math.washington.edu/~lee/Ricci/">Ricci</a>.</p>
-  <p>For more information on our team members, see our <a href="members.html">members page</a>.</p>
-  
-  <h2>News</h2>
-  <ul>
-    <li>The Funsearch group has been able to completely replicate the results of DeepMind's Funsearch algorithm. They are now working on a project that they've called "Darwin" to further improve the efficiency of the algorithm. Here is the <a href="https://github.com/SiddarthNarayanan01/research_v2">GitHub repository</a>.</li>
-    <li>The Alpha Geometry group, along with a Google software engineer, have also been able to completely replicate the results of DeepMind's Alpha Geometry algorithm. They are now trying to generalize it to other mathematical fields like algebra and analysis.</li>
-  </ul>
-</div>
-
-</body>
-</html>
