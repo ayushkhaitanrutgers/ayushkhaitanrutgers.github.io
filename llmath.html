@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research Group
-permalink: /research-group
+permalink: /llmath/
 ---
 
 <section id="research" class="res">
@@ -15,7 +15,8 @@ permalink: /research-group
       <p>
         I run a research group with some undergraduate Math and CS students. We develop AI tools
         that can help mathematicians in their research. We also fine-tune open-source models on
-        various Mathematica packages. <a href="https://ayushkhaitanrutgers.github.io/members.html">Here</a> are some of the past and present members of our group. 
+        various Mathematica packages.
+        <a href="{{ '/members.html' | relative_url }}">Here</a> are some of the past and present members of our group.
       </p>
     </div>
   </article>
@@ -33,7 +34,9 @@ permalink: /research-group
               <span class="chip"></span>
             </div>
             <p class="news__text">
-              We have created a <a href="https://o-forge.com/">tool</a>, called O-Forge, that can prove certain kinds of research-level inequalities, thereby answering a <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940#463940">question</a> of Terence Tao. <a href="https://arxiv.org/abs/2510.12350">Here</a> is the paper.
+              We have created a <a href="https://o-forge.com/">tool</a>, called O-Forge, that can prove certain kinds of research-level
+              inequalities, thereby answering a <a href="https://mathoverflow.net/questions/463937/what-mathematical-problems-can-be-attacked-using-deepminds-recent-mathematical/463940#463940">question</a> of Terence Tao.
+              <a href="https://arxiv.org/abs/2510.12350">Here</a> is the paper.
             </p>
           </div>
         </li>
@@ -50,7 +53,6 @@ permalink: /research-group
             </p>
           </div>
         </li>
-
         <li class="news__item">
           <div class="news__dot" aria-hidden="true"></div>
           <div class="news__content">
@@ -79,15 +81,11 @@ permalink: /research-group
     --chip: #f7f8fc;
     --r: 14px;
   }
-
   .res{ background: var(--bg); max-width: 900px; }
   .res__title{ margin: 0 0 6px 0; font-size: 2rem; line-height: 1.2; color: var(--ink); }
-
   .card{ padding: 16px 0 18px 0; border-top: 1px solid var(--line); }
   .card:first-of-type{ border-top: 0; }
-
   .card__title{ margin: 0 0 8px 0; font-size: 1.35rem; font-weight: 650; color: var(--ink); }
-
   .card__body{
     background: var(--chip);
     border: 1px solid var(--line);
@@ -97,78 +95,34 @@ permalink: /research-group
     font-size: 0.98rem;
     line-height: 1.55;
   }
-
   .card__body a{
     color: #3347c2;
     text-decoration: none;
     border-bottom: 1px dotted rgba(51,71,194,.35);
   }
   .card__body a:hover{ border-bottom-color: transparent; }
-
-  /* ===== News list styling ===== */
   .news{
-    list-style: none;
-    margin: 0;
-    padding: 2px 0 0 0;
-    display: grid;
-    gap: 14px;
+    list-style: none; margin: 0; padding: 2px 0 0 0; display: grid; gap: 14px;
   }
-
   .news__item{
-    position: relative;
-    display: grid;
-    grid-template-columns: 14px 1fr;
-    gap: 10px;
-    align-items: start;
+    position: relative; display: grid; grid-template-columns: 14px 1fr; gap: 10px; align-items: start;
   }
-
   .news__dot{
-    width: 10px; height: 10px;
-    margin-top: 9px;
-    border-radius: 999px;
-    background: #9aa6c4;
-    box-shadow: 0 0 0 3px #eef2ff inset;
+    width: 10px; height: 10px; margin-top: 9px; border-radius: 999px; background: #9aa6c4; box-shadow: 0 0 0 3px #eef2ff inset;
   }
-
   .news__headline{
-    color: var(--ink);
-    font-weight: 600;
-    line-height: 1.35;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
+    color: var(--ink); font-weight: 600; line-height: 1.35; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
   }
-
-  .news__text{
-    margin: 6px 0 0 0;
-    color: var(--soft);
-  }
-
+  .news__text{ margin: 6px 0 0 0; color: var(--soft); }
   .chip{
-    display: inline-block;
-    font-size: 0.74rem;
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: #eef2ff;
-    border: 1px solid #dfe6ff;
-    color: #3347c2;
-    line-height: 1.6;
+    display: inline-block; font-size: 0.74rem; padding: 2px 8px; border-radius: 999px;
+    background: #eef2ff; border: 1px solid #dfe6ff; color: #3347c2; line-height: 1.6;
   }
-
   .repo{
-    margin-left: auto;
-    font-size: 0.85rem;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: #ffffff;
-    border: 1px solid var(--line);
-    color: #3347c2 !important;
-    text-decoration: none;
-    border-bottom: 0;
+    margin-left: auto; font-size: 0.85rem; padding: 4px 10px; border-radius: 999px;
+    background: #ffffff; border: 1px solid var(--line); color: #3347c2 !important; text-decoration: none; border-bottom: 0;
   }
   .repo:hover{ background: #f9fafb; }
-
   @media (max-width: 640px){
     .card__title{ font-size: 1.2rem; }
     .card__body{ font-size: 0.96rem; }
