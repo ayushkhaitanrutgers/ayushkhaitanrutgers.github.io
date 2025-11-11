@@ -13,7 +13,7 @@ permalink: /teaching
   <article class="card">
     <h2 class="card__title">AI and Mathematics</h2>
     <div class="card__body">
-      <p>In Fall 2025, I am teaching a Graduate course on AI methods in research mathematics. This course has two separate, relatively disjoint components. In the first component, we go over the basics of machine learning, heavily based on <a href = "https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/pages/lecture-notes/">these notes</a> from MIT OCW. </p>
+      <p>In Fall 2025, I am teaching a Graduate course on AI methods in research mathematics. <a href="https://ayushkhaitanrutgers.github.io/math_for_ai.html">Here</a> is the course webpage. This course has two separate, relatively disjoint components. In the first component, we go over the basics of machine learning, heavily based on <a href = "https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/pages/lecture-notes/">these notes</a> from MIT OCW. </p>
       <p> In the second part of the course, we study how to modify existing AI technologies like Funsearch and Alphageometry to be able to solve problems in other fields of Mathematics. This is primarily done through student projects, with weekly meetings and guidance.</p>
     </div>
   </article>
