@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MATH 495 · Machine Learning — Resources & Schedule</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Theme ===== */
+    :root{
+      --brand: #1a73e8;
+      --ink: #2e2e2e;
+      --muted:#606570;
+      --bg:#f7f9fc;
+      --card:#fff;
+      --shadow: 0 10px 24px rgba(0,0,0,.06);
+      --radius: 14px;
+      --ring: 0 0 0 3px rgba(26,115,232,.18);
+    }
+    *{ box-sizing: border-box; }
+    html,body{ margin:0; padding:0; }
+    body{
+      font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.75;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{ color:var(--brand); text-decoration:none; font-weight:600; }
+    a:hover{ text-decoration:underline; }
+    img{ max-width:100%; }
+
+    /* ===== Hero ===== */
+    .hero{
+      background: linear-gradient(135deg, #1a73e8, #4b90ff);
+      color:#fff;
+      text-align:center;
+      padding:64px 20px 48px;
+      border-radius:0 0 18px 18px;
+      box-shadow:var(--shadow);
+    }
+    .hero h1{
+      margin:0 0 8px;
+      font-family:'Roboto Slab',serif;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0 auto;
+      max-width: 860px;
+      font-size: clamp(16px, 2.2vw, 18px);
+      color:#e9f0ff;
+    }
+
+    /* ===== Container ===== */
+    .container{
+      max-width: 1000px;
+      margin: 28px auto;
+      padding: 0 18px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding: 26px 22px;
+    }
+
+    /* ===== Sections ===== */
+    h2,h3{
+      font-family:'Roboto Slab',serif;
+      color:var(--brand);
+      margin: 10px 0 8px;
+    }
+    p{ color:var(--muted); }
+
+    /* Meta grid */
+    .meta{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap:10px;
+      background:#f1f6ff;
+      border:1px solid #e1ecff;
+      border-radius:10px;
+      padding:12px 14px;
+      margin: 14px 0 4px;
+      font-size:15px;
+    }
+    .meta b{ color:#0c47b7; }
+
+    /* Schedule table */
+    .schedule-wrap{ overflow-x:auto; }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top: 8px;
+      min-width: 720px;
+    }
+    caption{
+      caption-side: top;
+      text-align:left;
+      font-weight:700;
+      color:var(--ink);
+      margin-bottom:8px;
+    }
+    th, td{
+      padding:12px 10px;
+      text-align:left;
+      border-bottom:1px solid #eaecef;
+      vertical-align:top;
+    }
+    th{
+      background:#f8fafc;
+      font-weight:700;
+    }
+    tbody tr:nth-child(even){ background:#fbfdff; }
+
+    /* Bullet-list inside table for uploads */
+    .materials{
+      margin:0;
+      padding-left: 18px;
+      color:var(--muted);
+    }
+    .materials li{ margin: 2px 0; }
+
+    /* Badges */
+    .tba{
+      display:inline-block;
+      font-size:12px;
+      padding:2px 8px;
+      border-radius:999px;
+      background:#fff4cc;
+      border:1px solid #ffe08a;
+      color:#7a5e00;
+      margin-left:6px;
+      vertical-align:baseline;
+    }
+
+    /* Footer */
+    footer{
+      margin: 22px 0 40px;
+      font-size:14px;
+      color:#667085;
+      text-align:center;
+    }
+
+    /* Focus styles for a11y */
+    a:focus, button:focus, [tabindex]:focus{
+      outline:none;
+      box-shadow:var(--ring);
+      border-radius:10px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 720px){
+      .hero{ padding:48px 16px 32px; }
+      .card{ padding:20px 16px; }
+      p{ font-size:16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <h1>MATH 495 · Machine Learning</h1>
+    <p>Resources, weekly notes, and quizzes. We will roughly follow the MIT 6.867 notes.
+       Expect math, models, and a healthy respect for data.</p>
+  </header>
+
+  <main class="container" role="main">
+    <!-- Overview / Links -->
+    <section class="card" aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>
+        Core references: 
+        <a href="https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/pages/lecture-notes/" target="_blank" rel="noopener">MIT 6.867 Lecture Notes</a>.
+      </p>
+
+      <div class="meta" aria-label="Course quick facts">
+        <div><b>Instructor:</b> Ayush Khaitan</div>
+        <div><b>Term:</b> Fall 2025</div>
+        <div><b>Time/Place:</b> SC-119 </div>
+        <div><b>Office Hours:</b> TBD</div>
+        <div><b>Email:</b> ak2530@rutgers.edu</div>
+        <div><b>Course Tools:</b> 
+          <a href="#" title="Canvas link">Canvas</a> · 
+          <a href="#" title="GitHub assignments repo">GitHub</a>
+        </div>
+      </div>
+
+      <p>
+        This page will hold PDFs for lecture notes and short quizzes. As we progress, links will light up; until then you’ll see a friendly 
+        <span class="tba" aria-label="To be announced">TBA</span>.
+      </p>
+    </section>
+
+    <!-- Schedule -->
+    <section class="card" aria-labelledby="schedule">
+      <h2 id="schedule">Lecture Schedule & Uploads</h2>
+
+      <div class="schedule-wrap">
+        <table>
+          <caption>20 Lectures (notes + quiz upload targets)</caption>
+          <thead>
+            <tr>
+              <th style="width:80px;">#</th>
+              <th>Topic</th>
+              <th style="width:320px;">Materials (upload here)</th>
+            </tr>
+          </thead>
+          <tbody>
+  <tr>
+    <td>Lecture 01</td>
+    <td>Introduction, linear classification, perceptron update rule</td>
+    <td>
+      <ul class="materials">
+        <li><a href="notes/Lecture_1__notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="notes/Lec_1.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 02</td>
+    <td>Perceptron convergence, generalization</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec02-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec02-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 03</td>
+    <td>Maximum margin classification</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec03-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec03-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 04</td>
+    <td>Classification errors, regularization, logistic regression</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec04-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec04-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 05</td>
+    <td>Linear regression, estimator bias and variance, active learning</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec05-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec05-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 06</td>
+    <td>Active learning (cont.), non-linear predictions, kernels</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec06-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec06-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 07</td>
+    <td>Kernel regression, kernels</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec07-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec07-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 08</td>
+    <td>Support vector machines (SVM) & kernels; kernel optimization</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec08-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec08-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 09</td>
+    <td>Model selection</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec09-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec09-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 10</td>
+    <td>Model selection criteria</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec10-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec10-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 11</td>
+    <td>Description length, feature selection</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec11-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec11-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 12</td>
+    <td>Combining classifiers, boosting</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec12-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec12-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 13</td>
+    <td>Boosting, margin, and complexity</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec13-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec13-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 14</td>
+    <td>Margin and generalization, mixture models</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec14-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec14-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 15</td>
+    <td>Mixtures and the expectation–maximization (EM) algorithm</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec15-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec15-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 16</td>
+    <td>EM, regularization, clustering</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec16-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec16-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 17</td>
+    <td>Clustering</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec17-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec17-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 18</td>
+    <td>Spectral clustering, Markov models</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec18-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec18-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 19</td>
+    <td>Hidden Markov models (HMMs)</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec19-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec19-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 20</td>
+    <td>HMMs (cont.)</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec20-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec20-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 21</td>
+    <td>Bayesian networks</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec21-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec21-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 22</td>
+    <td>Learning Bayesian networks</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec22-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec22-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 23</td>
+    <td>Probabilistic inference — guest lecture on collaborative filtering</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec23-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec23-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 24</td>
+    <td>Current problems in machine learning, wrap up</td>
+    <td>
+      <ul class="materials">
+        <li><a href="materials/lec24-notes.pdf">Lecture notes (PDF)</a></li>
+        <li><a href="materials/lec24-quiz.pdf">Quiz</a></li>
+      </ul>
+    </td>
+  </tr>
+</tbody>
+
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    Last updated: <!-- set manually --> September 2025 · Rutgers Mathematics
+  </footer>
+</body>
+</html>
