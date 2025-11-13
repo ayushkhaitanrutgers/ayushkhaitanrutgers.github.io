@@ -17,4 +17,4 @@ I first got my bachelors in engineering at <a href= "https://en.wikipedia.org/wi
 
 You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume.pdf">here</a>. 
 
-You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above. Also check out my wife Tamanna Subba's <a href="https://www.bnl.gov/staff/tsubba">research page</a>, who is an atmospheric scientist. 
+You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above. 
