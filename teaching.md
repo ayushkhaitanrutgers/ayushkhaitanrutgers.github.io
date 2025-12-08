@@ -22,7 +22,7 @@ permalink: /teaching
   <article class="card">
     <h2 class="card__title">Intro to proofs using Lean</h2>
     <div class="card__body">
-      <p>I am also teaching an Intro to Proofs course based on Lean. <a href="https://ayushkhaitanrutgers.github.io/lean_seminar.html">Here</a> is the course webpage. This is one of the first such courses offered in the country, and I had to design several components of the course myself, that may be useful to other instructors teaching this course in the future.</p>
+      <p>I am also teaching an Intro to Proofs course based on Lean. This is one of the first such courses offered in the country, and I had to design several components of the course myself, that may be useful to other instructors teaching this course in the future.</p>
       <p>We are using Heather Macbeth's <a href= "https://hrmacbeth.github.io/math2001/">textbook</a> in our course. The students are expected to write both rigorous "human" proofs, as well as Lean proofs for every question that we attempt. We are systematically working through the entire textbook, and <a href="https://github.com/ayushkhaitanrutgers/Intro-to-proofs">uploading</a> solutions to all questions on GitHub. This comprehensive approach to Lean has been very rewarding, and most of the students in my class can now write proofs for non-trivial lemmas all by themselves, using intricate sequences of tactics and lemmas from MathLib4.</p>
     </div>
   </article>
