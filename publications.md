@@ -63,7 +63,7 @@ permalink: /publications
   <article class="pub">
     <h2 class="pub__title"><em>GJMS operators of smooth metric measure spaces</em></h2>
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
-    <div class="pub__meta">Submitted, 2022 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2203.04719">arXiv:2203.04719</a></div>
+    <div class="pub__meta">Accepted at Journal of Geometric Analysis &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2203.04719">arXiv:2203.04719</a></div>
     <div class="pub__summary">
       We construct GJMS operators for smooth metric measure spaces, and prove several properties.
     </div>
@@ -73,7 +73,7 @@ permalink: /publications
   <article class="pub">
     <h2 class="pub__title"><em>Weighted renormalized volume coefficients</em></h2>
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
-    <div class="pub__meta">Submitted, 2022 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2205.06018">arXiv:2205.06018</a></div>
+    <div class="pub__meta">Accepted at Differential Geometry and its Applications &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2205.06018">arXiv:2205.06018</a></div>
     <div class="pub__summary">
       We construct renormalized volume coefficients for smooth metric measure spaces and prove several key properties.
     </div>
