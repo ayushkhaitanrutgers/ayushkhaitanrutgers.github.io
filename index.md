@@ -26,6 +26,7 @@ I am co-organizing the [AI and Math seminar](https://ai-math-seminar.github.io/s
 - **[Feb 8, 2026]**: Traveling to Caltech, Pasadena for a week as part of a SQuaRE grant research group with Jeffrey Case, Yueh-Ju Lin, Aaron Tyrell and Wei Yuan.
 - **[Jan 31, 2026]**: Talk at the Kerala School of Mathematics, India (Zoom). 
 - **[Jan 19, 2026]**: Teaching a Lean-based Intro to Proofs course in Spring 2026.
+- **[Jan 15, 2026]**: Presentation at Stanford University, CA (Zoom). 
 - **[Jan 10, 2026]**: My first solo paper in print! "Weighted ambient metric for manifolds with density" gets published in Advances in Mathematics. [Journal link](https://authors.elsevier.com/tracking/article/details.do?aid=110787&jid=YAIMA&surname=Khaitan)
 - **[Jan 10, 2026]**: The paper "Weighted GJMS operators" gets accepted at the Journal of Geometric Analysis.
 - **[Dec 15, 2025]**: The paper "Weighted renormalized volume coefficients" gets accepted at Differential Geometry and its Applications.
