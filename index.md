@@ -15,8 +15,6 @@ If you think reinforcement learning (RL) or other AI-guided search techniques co
 
 Email: **ayush.khaitan@rutgers.edu**
 
-I first got my bachelors in engineering at <a href= "https://en.wikipedia.org/wiki/BITS_Pilani">BITS, Pilani</a>, and then completed a PhD in Mathematics at <a href= "https://en.wikipedia.org/wiki/Pennsylvania_State_University">Penn State</a>.
-
 You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume_web.pdf">here</a>. 
 
 You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above. 
