@@ -11,7 +11,8 @@ title: Home
 
 Hill Assistant Professor, Rutgers University, New Brunswick  
 
-I work in AI for mathematics, geometry, and combinatorics. 
+If you think reinforcement learning (RL) or other AI-guided search techniques could help with a research-level mathematics problem, feel free to reach out. We’ve had some success on a small number of problems recently, and I’d be happy to discuss further.
+**Email: ayush.khaitan@rutgers.edu**
 
 I first got my bachelors in engineering at <a href= "https://en.wikipedia.org/wiki/BITS_Pilani">BITS, Pilani</a>, and then completed a PhD in Mathematics at <a href= "https://en.wikipedia.org/wiki/Pennsylvania_State_University">Penn State</a>.
 
