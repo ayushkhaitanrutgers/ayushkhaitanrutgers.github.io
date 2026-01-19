@@ -43,7 +43,7 @@ permalink: /publications
   <article class="pub">
     <h2 class="pub__title"><em>Ambient metric for manifolds with density and the Ricci flow</em></h2>
     <div class="pub__authors"><strong>Authors:</strong> Ayush Khaitan</div>
-    <div class="pub__meta"><em>Advances in Mathematics</em>, 2026 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2308.02061">arXiv:2308.02061</a> <a href="https://authors.elsevier.com/tracking/article/details.do?aid=110787&jid=YAIMA&surname=Khaitan">Journal link</a></div>
+    <div class="pub__meta"><em>Advances in Mathematics</em>, 2026 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2308.02061">arXiv:2308.02061</a> <a href="https://www.sciencedirect.com/science/article/pii/S0001870826000095">Journal link</a></div>
     <div class="pub__summary">
       We construct fully non‑linear analogues of Perelman’s W‑functional that are monotone along the Ricci flow, and stationary only for shrinking Ricci solitons. We do so by constructing a Fefferman–Graham ambient metric for manifolds with density.
     </div>
