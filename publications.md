@@ -19,6 +19,13 @@ permalink: /publications
     </div>
   </article>
 
+  <article class="pub">
+    <h2></h2>
+    <div class="pub__authors"><strong>Authors:</strong> <a href="https://sites.google.com/view/jeffreyscase">Jeffrey Case</a>, Ayush Khaitan, <a href="https://sites.google.com/view/yuehjulin">Yueh‑Ju Lin</a>, <a href="https://aaron-tyrrell.com">Aaron Tyrrell</a>, <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=241215">Wei Yuan</a></div>
+    <div class="pub_meta">Submitted, 2026 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2604.08372">arXiv:2604.08372</a></div>
+    <div class="pub_summary">We develop methods for constructing and computing conformal invariants of submanifolds, with a particular emphasis on conformal submanifold scalars and conformally invariant integrals of natural submanifold scalars.</div>
+    </article>
+
   <!-- Paper: Elementary symmetric polynomials -->
   <article class="pub">
     <h2 class="pub__title"><em>Elementary symmetric polynomials under the fixed point measure</em></h2>
@@ -32,8 +39,8 @@ permalink: /publications
   <!-- Paper: Poincaré–Einstein -->
   <article class="pub">
     <h2 class="pub__title"><em>Computing renormalized curvature integrals on Poincaré–Einstein manifolds</em></h2>
-    <div class="pub__authors"><strong>Authors:</strong> <a href="https://sites.google.com/view/jeffreyscase">Jeffrey Case</a>, <a href="https://sites.google.com/view/yuehjulin">Yueh‑Ju Lin</a>, <a href="https://aaron-tyrrell.com">Aaron Tyrrell</a>, <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=241215">Wei Yuan</a>, Ayush Khaitan</div>
-    <div class="pub__meta">Submitted, 2024 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2404.11319">arXiv:2404.11319</a></div>
+    <div class="pub__authors"><strong>Authors:</strong> <a href="https://sites.google.com/view/jeffreyscase">Jeffrey Case</a>, Ayush Khaitan, <a href="https://sites.google.com/view/yuehjulin">Yueh‑Ju Lin</a>, <a href="https://aaron-tyrrell.com">Aaron Tyrrell</a>, <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=241215">Wei Yuan</a>, Ayush Khaitan</div>
+    <div class="pub__meta">Advances in Mathematics, 2026 &nbsp;•&nbsp; <a href="https://arxiv.org/abs/2404.11319">arXiv:2404.11319</a></div>
     <div class="pub__summary">
       We describe a general procedure for constructing renormalized curvature integrals on Poincaré–Einstein manifolds.
     </div>
