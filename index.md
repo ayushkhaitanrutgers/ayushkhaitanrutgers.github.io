@@ -15,7 +15,7 @@ If you think reinforcement learning (RL) or other AI-guided search techniques co
 
 Email: **ayush.khaitan@rutgers.edu**
 
-You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume_web.pdf">here</a>. 
+You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume_latest.pdf">here</a>. 
 
 You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above. 
 
