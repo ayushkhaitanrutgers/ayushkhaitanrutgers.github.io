@@ -15,13 +15,15 @@ If you think reinforcement learning (RL) or other AI-guided search techniques co
 
 Email: **ayush.khaitan@rutgers.edu**
 
-You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume_latest.pdf">here</a>. 
+You can find my resume <a href= "https://ayushkhaitanrutgers.github.io/resume_apr20.pdf">here</a>. 
 
 You can access my **Research**, **Publications**, **Teaching**, and **Research group** pages using the tabs above. 
 
 I am co-organizing the [AI and Math seminar](https://ai-math-seminar.github.io/seminar/) at Rutgers.
 
 ## Events
+- **[May 11-15, 2026]**: Attending the Formalization of Analysis workshop at ICERM, Providence, RI.
+- **[Apr 4-5, 2026]**: Attending the Southern California Geometric Analysis Seminar at the University of California at San Diego.
 - **[Mar 28, 2026]**: Speaking at the AMS Special Session on Recent Results in Geometry and Topology at the Spring Eastern Sectional Meeting at Boston College.
 - **[Feb 8, 2026]**: Traveling to Caltech, Pasadena for a week as part of a SQuaRE grant research group with Jeffrey Case, Yueh-Ju Lin, Aaron Tyrell and Wei Yuan.
 - **[Jan 31, 2026]**: Talk at the Kerala School of Mathematics, India (Zoom). 
